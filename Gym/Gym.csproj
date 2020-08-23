@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1E860E4-5010-4890-8332-A0A3FE064500}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gym</RootNamespace>
+    <AssemblyName>Gym</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetAims.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAims.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCities.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetEmployees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEmployees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPersonals.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPersonals.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRooms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRooms.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSubscribes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSubscribes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTools.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTools.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetToolsInRoom.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetToolsInRoom.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTraining.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTraining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTypes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTypes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblAims.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblAims.Designer.cs">
+      <DependentUpon>FormTblAims.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblCities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblCities.Designer.cs">
+      <DependentUpon>FormTblCities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblEmployees.Designer.cs">
+      <DependentUpon>FormTblEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblPersonals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblPersonals.Designer.cs">
+      <DependentUpon>FormTblPersonals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblRooms.Designer.cs">
+      <DependentUpon>FormTblRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblSubscribers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblSubscribers.Designer.cs">
+      <DependentUpon>FormTblSubscribers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblTools.Designer.cs">
+      <DependentUpon>FormTblTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblToolsInRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblToolsInRooms.Designer.cs">
+      <DependentUpon>FormTblToolsInRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblTraining.Designer.cs">
+      <DependentUpon>FormTblTraining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTblTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblTypes.Designer.cs">
+      <DependentUpon>FormTblTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSetAims.xsc">
+      <DependentUpon>DataSetAims.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAims.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAims.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetAims.xss">
+      <DependentUpon>DataSetAims.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCities.xsc">
+      <DependentUpon>DataSetCities.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCities.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCities.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCities.xss">
+      <DependentUpon>DataSetCities.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEmployees.xsc">
+      <DependentUpon>DataSetEmployees.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEmployees.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEmployees.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetEmployees.xss">
+      <DependentUpon>DataSetEmployees.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPersonals.xsc">
+      <DependentUpon>DataSetPersonals.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPersonals.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPersonals.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetPersonals.xss">
+      <DependentUpon>DataSetPersonals.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRooms.xsc">
+      <DependentUpon>DataSetRooms.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRooms.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRooms.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetRooms.xss">
+      <DependentUpon>DataSetRooms.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSubscribes.xsc">
+      <DependentUpon>DataSetSubscribes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSubscribes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSubscribes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSubscribes.xss">
+      <DependentUpon>DataSetSubscribes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTools.xsc">
+      <DependentUpon>DataSetTools.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTools.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTools.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTools.xss">
+      <DependentUpon>DataSetTools.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetToolsInRoom.xsc">
+      <DependentUpon>DataSetToolsInRoom.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetToolsInRoom.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetToolsInRoom.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetToolsInRoom.xss">
+      <DependentUpon>DataSetToolsInRoom.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTraining.xsc">
+      <DependentUpon>DataSetTraining.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTraining.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTraining.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTraining.xss">
+      <DependentUpon>DataSetTraining.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTypes.xsc">
+      <DependentUpon>DataSetTypes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTypes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTypes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTypes.xss">
+      <DependentUpon>DataSetTypes.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
