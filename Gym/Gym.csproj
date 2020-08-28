@@ -69,10 +69,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetRooms.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSetSubscribes.Designer.cs">
+    <Compile Include="DataSetSubscribers.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetSubscribes.xsd</DependentUpon>
+      <DependentUpon>DataSetSubscribers.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetTools.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -106,6 +106,12 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTblSubscribers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTblSubscribers.Designer.cs">
+      <DependentUpon>FormTblSubscribers.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTblAims.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,12 +141,6 @@
     </Compile>
     <Compile Include="FormTblRooms.Designer.cs">
       <DependentUpon>FormTblRooms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormTblSubscribers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTblSubscribers.Designer.cs">
-      <DependentUpon>FormTblSubscribers.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTblTools.cs">
       <SubType>Form</SubType>
@@ -173,6 +173,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblSubscribers.resx">
+      <DependentUpon>FormTblSubscribers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblAims.resx">
+      <DependentUpon>FormTblAims.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblCities.resx">
+      <DependentUpon>FormTblCities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblEmployees.resx">
+      <DependentUpon>FormTblEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblPersonals.resx">
+      <DependentUpon>FormTblPersonals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblRooms.resx">
+      <DependentUpon>FormTblRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblTools.resx">
+      <DependentUpon>FormTblTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblToolsInRooms.resx">
+      <DependentUpon>FormTblToolsInRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblTraining.resx">
+      <DependentUpon>FormTblTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTblTypes.resx">
+      <DependentUpon>FormTblTypes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -238,16 +268,16 @@
     <None Include="DataSetRooms.xss">
       <DependentUpon>DataSetRooms.xsd</DependentUpon>
     </None>
-    <None Include="DataSetSubscribes.xsc">
-      <DependentUpon>DataSetSubscribes.xsd</DependentUpon>
+    <None Include="DataSetSubscribers.xsc">
+      <DependentUpon>DataSetSubscribers.xsd</DependentUpon>
     </None>
-    <None Include="DataSetSubscribes.xsd">
+    <None Include="DataSetSubscribers.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetSubscribes.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSetSubscribers.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataSetSubscribes.xss">
-      <DependentUpon>DataSetSubscribes.xsd</DependentUpon>
+    <None Include="DataSetSubscribers.xss">
+      <DependentUpon>DataSetSubscribers.xsd</DependentUpon>
     </None>
     <None Include="DataSetTools.xsc">
       <DependentUpon>DataSetTools.xsd</DependentUpon>

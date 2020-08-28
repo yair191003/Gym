@@ -20,9 +20,9 @@ namespace Gym {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSetSubscribes")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSetSubscribers")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSetSubscribes : global::System.Data.DataSet {
+    public partial class DataSetSubscribers : global::System.Data.DataSet {
         
         private tblSubscribersDataTable tabletblSubscribers;
         
@@ -30,7 +30,7 @@ namespace Gym {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DataSetSubscribes() {
+        public DataSetSubscribers() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Gym {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DataSetSubscribes(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSetSubscribers(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Gym {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSetSubscribes cln = ((DataSetSubscribes)(base.Clone()));
+            DataSetSubscribers cln = ((DataSetSubscribers)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Gym {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSetSubscribes";
+            this.DataSetName = "DataSetSubscribers";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSetSubscribes.xsd";
+            this.Namespace = "http://tempuri.org/DataSetSubscribers.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabletblSubscribers = new tblSubscribersDataTable();
@@ -225,7 +225,7 @@ namespace Gym {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSetSubscribes ds = new DataSetSubscribes();
+            DataSetSubscribers ds = new DataSetSubscribers();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -608,7 +608,7 @@ namespace Gym {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSetSubscribes ds = new DataSetSubscribes();
+                DataSetSubscribers ds = new DataSetSubscribers();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -980,7 +980,7 @@ namespace Gym {
         }
     }
 }
-namespace Gym.DataSetSubscribesTableAdapters {
+namespace Gym.DataSetSubscribersTableAdapters {
     
     
     /// <summary>
@@ -1208,7 +1208,7 @@ namespace Gym.DataSetSubscribesTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSetSubscribes.tblSubscribersDataTable dataTable) {
+        public virtual int Fill(DataSetSubscribers.tblSubscribersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1221,9 +1221,9 @@ namespace Gym.DataSetSubscribesTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSetSubscribes.tblSubscribersDataTable GetData() {
+        public virtual DataSetSubscribers.tblSubscribersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSetSubscribes.tblSubscribersDataTable dataTable = new DataSetSubscribes.tblSubscribersDataTable();
+            DataSetSubscribers.tblSubscribersDataTable dataTable = new DataSetSubscribers.tblSubscribersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1231,14 +1231,14 @@ namespace Gym.DataSetSubscribesTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSetSubscribes.tblSubscribersDataTable dataTable) {
+        public virtual int Update(DataSetSubscribers.tblSubscribersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSetSubscribes dataSet) {
+        public virtual int Update(DataSetSubscribers dataSet) {
             return this.Adapter.Update(dataSet, "tblSubscribers");
         }
         
@@ -1685,7 +1685,7 @@ namespace Gym.DataSetSubscribesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DataSetSubscribes dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DataSetSubscribers dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tblSubscribersTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.tblSubscribers.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1704,7 +1704,7 @@ namespace Gym.DataSetSubscribesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DataSetSubscribes dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DataSetSubscribers dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tblSubscribersTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.tblSubscribers.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1722,7 +1722,7 @@ namespace Gym.DataSetSubscribesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DataSetSubscribes dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DataSetSubscribers dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tblSubscribersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tblSubscribers.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1764,7 +1764,7 @@ namespace Gym.DataSetSubscribesTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DataSetSubscribes dataSet) {
+        public virtual int UpdateAll(DataSetSubscribers dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

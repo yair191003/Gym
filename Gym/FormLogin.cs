@@ -74,7 +74,7 @@ namespace Gym
                 if (password == this.password.Text)
                 {
                     this.Hide();
-                    FormMenu frMenu = new FormMenu();
+                    FormMenu frMenu = new FormMenu(dataConnection);
                     frMenu.Show();
                     frMenu.Disposed += new EventHandler(frMenu_Disposed);
                 }

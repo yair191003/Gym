@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DataSetSubscribes" targetNamespace="http://tempuri.org/DataSetSubscribes.xsd" xmlns:mstns="http://tempuri.org/DataSetSubscribes.xsd" xmlns="http://tempuri.org/DataSetSubscribes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DataSetSubscribers" targetNamespace="http://tempuri.org/DataSetSubscribers.xsd" xmlns:mstns="http://tempuri.org/DataSetSubscribers.xsd" xmlns="http://tempuri.org/DataSetSubscribers.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -115,7 +115,7 @@ FROM            tblSubscribers</CommandText>
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataSetSubscribes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetSubscribes" msprop:Generator_UserDSName="DataSetSubscribes">
+  <xs:element name="DataSetSubscribers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetSubscribers" msprop:Generator_UserDSName="DataSetSubscribers">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="tblSubscribers" msprop:Generator_TableClassName="tblSubscribersDataTable" msprop:Generator_TableVarName="tabletblSubscribers" msprop:Generator_TablePropName="tblSubscribers" msprop:Generator_RowDeletingName="tblSubscribersRowDeleting" msprop:Generator_RowChangingName="tblSubscribersRowChanging" msprop:Generator_RowEvHandlerName="tblSubscribersRowChangeEventHandler" msprop:Generator_RowDeletedName="tblSubscribersRowDeleted" msprop:Generator_UserTableName="tblSubscribers" msprop:Generator_RowChangedName="tblSubscribersRowChanged" msprop:Generator_RowEvArgName="tblSubscribersRowChangeEvent" msprop:Generator_RowClassName="tblSubscribersRow">
