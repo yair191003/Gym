@@ -40,13 +40,15 @@
             this.aimsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.typesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemAddEmpoyee = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tabelsToolStripMenuItem});
+            this.tabelsToolStripMenuItem,
+            this.ToolStripMenuItemAddEmpoyee});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(284, 24);
@@ -67,78 +69,85 @@
             this.trainingToolStripMenuItem,
             this.typesToolStripMenuItem});
             this.tabelsToolStripMenuItem.Name = "tabelsToolStripMenuItem";
-            this.tabelsToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.tabelsToolStripMenuItem.Text = "&Tabels";
+            this.tabelsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.tabelsToolStripMenuItem.Text = "&טבלאות";
             // 
             // employeesToolStripMenuItem
             // 
             this.employeesToolStripMenuItem.Name = "employeesToolStripMenuItem";
-            this.employeesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.employeesToolStripMenuItem.Text = "&Employees";
+            this.employeesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employeesToolStripMenuItem.Text = "&עובדים";
             this.employeesToolStripMenuItem.Click += new System.EventHandler(this.employeesToolStripMenuItem_Click);
             // 
             // citiesToolStripMenuItem
             // 
             this.citiesToolStripMenuItem.Name = "citiesToolStripMenuItem";
-            this.citiesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.citiesToolStripMenuItem.Text = "&Cities";
+            this.citiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.citiesToolStripMenuItem.Text = "&ערים";
             this.citiesToolStripMenuItem.Click += new System.EventHandler(this.citiesToolStripMenuItem_Click);
             // 
             // subscribersToolStripMenuItem
             // 
             this.subscribersToolStripMenuItem.Name = "subscribersToolStripMenuItem";
-            this.subscribersToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.subscribersToolStripMenuItem.Text = "&Subscribers";
+            this.subscribersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.subscribersToolStripMenuItem.Text = "&מנויים";
             this.subscribersToolStripMenuItem.Click += new System.EventHandler(this.subscribersToolStripMenuItem_Click);
             // 
             // roomsToolStripMenuItem
             // 
             this.roomsToolStripMenuItem.Name = "roomsToolStripMenuItem";
-            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.roomsToolStripMenuItem.Text = "&Rooms";
+            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.roomsToolStripMenuItem.Text = "&חדרים";
             this.roomsToolStripMenuItem.Click += new System.EventHandler(this.roomsToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.toolsToolStripMenuItem.Text = "&Tools";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.toolsToolStripMenuItem.Text = "&מכשירים";
             this.toolsToolStripMenuItem.Click += new System.EventHandler(this.toolsToolStripMenuItem_Click);
             // 
             // toolsInRoomsToolStripMenuItem
             // 
             this.toolsInRoomsToolStripMenuItem.Name = "toolsInRoomsToolStripMenuItem";
-            this.toolsInRoomsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.toolsInRoomsToolStripMenuItem.Text = "&Tools in rooms";
+            this.toolsInRoomsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.toolsInRoomsToolStripMenuItem.Text = "&מכשירים בחדר";
             this.toolsInRoomsToolStripMenuItem.Click += new System.EventHandler(this.toolsInRoomsToolStripMenuItem_Click);
             // 
             // personalsToolStripMenuItem
             // 
             this.personalsToolStripMenuItem.Name = "personalsToolStripMenuItem";
-            this.personalsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.personalsToolStripMenuItem.Text = "&Personals";
+            this.personalsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.personalsToolStripMenuItem.Text = "&אימונים אישיים";
             this.personalsToolStripMenuItem.Click += new System.EventHandler(this.personalsToolStripMenuItem_Click);
             // 
             // aimsToolStripMenuItem
             // 
             this.aimsToolStripMenuItem.Name = "aimsToolStripMenuItem";
-            this.aimsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.aimsToolStripMenuItem.Text = "&Aims";
+            this.aimsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aimsToolStripMenuItem.Text = "&מטרות";
             this.aimsToolStripMenuItem.Click += new System.EventHandler(this.aimsToolStripMenuItem_Click);
             // 
             // trainingToolStripMenuItem
             // 
             this.trainingToolStripMenuItem.Name = "trainingToolStripMenuItem";
-            this.trainingToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.trainingToolStripMenuItem.Text = "&Training";
+            this.trainingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.trainingToolStripMenuItem.Text = "&אימונים";
             this.trainingToolStripMenuItem.Click += new System.EventHandler(this.trainingToolStripMenuItem_Click);
             // 
             // typesToolStripMenuItem
             // 
             this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
-            this.typesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.typesToolStripMenuItem.Text = "&Types";
+            this.typesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.typesToolStripMenuItem.Text = "&סוגי אימון";
             this.typesToolStripMenuItem.Click += new System.EventHandler(this.typesToolStripMenuItem_Click);
+            // 
+            // ToolStripMenuItemAddEmpoyee
+            // 
+            this.ToolStripMenuItemAddEmpoyee.Name = "ToolStripMenuItemAddEmpoyee";
+            this.ToolStripMenuItemAddEmpoyee.Size = new System.Drawing.Size(54, 20);
+            this.ToolStripMenuItemAddEmpoyee.Text = "&הוספה";
+            this.ToolStripMenuItemAddEmpoyee.Click += new System.EventHandler(this.ToolStripMenuItemAddEmpoyee_Click);
             // 
             // FormMenu
             // 
@@ -171,6 +180,7 @@
         private System.Windows.Forms.ToolStripMenuItem aimsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trainingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem typesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemAddEmpoyee;
 
     }
 }

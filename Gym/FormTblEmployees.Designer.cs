@@ -44,16 +44,12 @@
             this.employPictureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblEmployeesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetEmployees = new Gym.DataSetEmployees();
-            this.dataSetEmployeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblEmployeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblEmployeesTableAdapter = new Gym.DataSetEmployeesTableAdapters.tblEmployeesTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEmployeesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetEmployees)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetEmployeesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEmployeesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -162,16 +158,6 @@
             this.dataSetEmployees.DataSetName = "DataSetEmployees";
             this.dataSetEmployees.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataSetEmployeesBindingSource
-            // 
-            this.dataSetEmployeesBindingSource.DataSource = this.dataSetEmployees;
-            this.dataSetEmployeesBindingSource.Position = 0;
-            // 
-            // tblEmployeesBindingSource
-            // 
-            this.tblEmployeesBindingSource.DataMember = "tblEmployees";
-            this.tblEmployeesBindingSource.DataSource = this.dataSetEmployeesBindingSource;
-            // 
             // tblEmployeesTableAdapter
             // 
             this.tblEmployeesTableAdapter.ClearBeforeFill = true;
@@ -213,8 +199,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEmployeesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetEmployees)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetEmployeesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEmployeesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,8 +208,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private DataSetEmployees dataSetEmployees;
-        private System.Windows.Forms.BindingSource dataSetEmployeesBindingSource;
-        private System.Windows.Forms.BindingSource tblEmployeesBindingSource;
         private DataSetEmployeesTableAdapters.tblEmployeesTableAdapter tblEmployeesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn employIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn employFirstNameDataGridViewTextBoxColumn;

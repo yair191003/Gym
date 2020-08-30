@@ -60,21 +60,23 @@ namespace Gym
         {
             String line, password;
             int id;
+            bool employIsAdmin;
             try
             {
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
-                datacommand.CommandText = " SELECT        employID, employPassword " +
+                datacommand.CommandText = " SELECT        employID, employPassword,employIsAdmin " +
                                            "FROM            tblEmployees " +
                                            "WHERE        employID= " + this.idNumber.Text;
                 OleDbDataReader dataReader = datacommand.ExecuteReader();
                 dataReader.Read();
                 id = dataReader.GetInt32(0);
                 password = dataReader.GetString(1);
+                employIsAdmin = dataReader.GetBoolean(2);
                 if (password == this.password.Text)
                 {
                     this.Hide();
-                    FormMenu frMenu = new FormMenu(dataConnection);
+                    FormMenu frMenu = new FormMenu(dataConnection, employIsAdmin);
                     frMenu.Show();
                     frMenu.Disposed += new EventHandler(frMenu_Disposed);
                 }

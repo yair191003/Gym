@@ -56,7 +56,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(23, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1.Size = new System.Drawing.Size(249, 354);
+            this.dataGridView1.Size = new System.Drawing.Size(1149, 560);
             this.dataGridView1.TabIndex = 0;
             // 
             // aimNameDataGridViewTextBoxColumn
@@ -98,7 +98,7 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Location = new System.Drawing.Point(116, 420);
+            this.button1.Location = new System.Drawing.Point(566, 626);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 455);
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);

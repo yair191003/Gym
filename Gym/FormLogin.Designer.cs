@@ -49,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(194, 128);
+            this.label2.Location = new System.Drawing.Point(205, 135);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
@@ -70,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(194, 78);
+            this.label1.Location = new System.Drawing.Point(191, 89);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
@@ -80,7 +80,7 @@
             // 
             // idNumber
             // 
-            this.idNumber.Location = new System.Drawing.Point(52, 78);
+            this.idNumber.Location = new System.Drawing.Point(52, 89);
             this.idNumber.Margin = new System.Windows.Forms.Padding(2);
             this.idNumber.Name = "idNumber";
             this.idNumber.Size = new System.Drawing.Size(131, 20);

@@ -14,10 +14,16 @@ namespace Gym
     public partial class FormMenu : Form
     {
         private OleDbConnection dataConnection;
-        public FormMenu(OleDbConnection dataConnection)
+        private bool employIsAdmin;
+        public FormMenu(OleDbConnection dataConnection, bool employIsAdmin)
         {
             InitializeComponent();
             this.dataConnection = dataConnection;
+            this.employIsAdmin = employIsAdmin;
+            if (!employIsAdmin)
+            {
+                employeesToolStripMenuItem.Enabled = false;
+            }
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -108,6 +114,14 @@ namespace Gym
         {
             this.Show();
             this.Activate();
+        }
+
+        private void ToolStripMenuItemAddEmpoyee_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddEmployee frm = new FormAddEmployee(dataConnection, employIsAdmin);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
         }
     }
 }
