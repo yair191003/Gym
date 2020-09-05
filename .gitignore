@@ -5,11 +5,11 @@
 
 # User-specific files
 
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+**/*.rsuser
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -18,7 +18,25 @@
 mono_crash.*
 
 # Build results
+<<<<<<< HEAD
+**/[Dd]ebug/
+**/[Dd]ebugPublic/
+**/[Rr]elease/
+**/[Rr]eleases/
+**/x64/
+**/x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+**/[Bb]in/*
+**/[Oo]bj/*
+**/[Ll]og/
+**/[Ll]ogs/
 
+# Visual Studio 2015/2017 cache/options directory
+**/.vs/*
+=======
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -64,6 +82,9 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
 
 # StyleCop
 StyleCopReport.xml
@@ -141,10 +162,12 @@ _TeamCity*
 .axoCover/*
 !.axoCover/settings.json
 
+
 # Coverlet is a free, cross platform Code Coverage Tool
 coverage*.json
 coverage*.xml
 coverage*.info
+
 
 # Visual Studio code coverage results
 *.coverage
@@ -357,7 +380,3 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-
-# Fody - auto-generated XML schema
-FodyWeavers.xsd
-
