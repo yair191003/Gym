@@ -54,6 +54,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetCities.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetEmployees.cs">
+      <DependentUpon>DataSetEmployees.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DataSetEmployees.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,11 +98,65 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetTypes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormAddAims.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddAims.Designer.cs">
+      <DependentUpon>FormAddAims.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddCities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddCities.Designer.cs">
+      <DependentUpon>FormAddCities.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddEmployee.Designer.cs">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPersonals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPersonals.Designer.cs">
+      <DependentUpon>FormAddPersonals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddRooms.Designer.cs">
+      <DependentUpon>FormAddRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddSubscribers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddSubscribers.Designer.cs">
+      <DependentUpon>FormAddSubscribers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTools.Designer.cs">
+      <DependentUpon>FormAddTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddToolsInRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddToolsInRoom.Designer.cs">
+      <DependentUpon>FormAddToolsInRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTrainings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTrainings.Designer.cs">
+      <DependentUpon>FormAddTrainings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTypes.Designer.cs">
+      <DependentUpon>FormAddTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -174,8 +232,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddAims.resx">
+      <DependentUpon>FormAddAims.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddCities.resx">
+      <DependentUpon>FormAddCities.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddEmployee.resx">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPersonals.resx">
+      <DependentUpon>FormAddPersonals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddRooms.resx">
+      <DependentUpon>FormAddRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddSubscribers.resx">
+      <DependentUpon>FormAddSubscribers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTools.resx">
+      <DependentUpon>FormAddTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddToolsInRoom.resx">
+      <DependentUpon>FormAddToolsInRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTrainings.resx">
+      <DependentUpon>FormAddTrainings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTypes.resx">
+      <DependentUpon>FormAddTypes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

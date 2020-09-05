@@ -37,7 +37,7 @@
             // 
             // checkButton
             // 
-            this.checkButton.Location = new System.Drawing.Point(92, 175);
+            this.checkButton.Location = new System.Drawing.Point(520, 201);
             this.checkButton.Margin = new System.Windows.Forms.Padding(2);
             this.checkButton.Name = "checkButton";
             this.checkButton.Size = new System.Drawing.Size(91, 19);
@@ -49,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(205, 135);
+            this.label2.Location = new System.Drawing.Point(703, 135);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
@@ -59,10 +59,10 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(52, 128);
+            this.password.Location = new System.Drawing.Point(406, 132);
             this.password.Margin = new System.Windows.Forms.Padding(2);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(131, 20);
+            this.password.Size = new System.Drawing.Size(245, 20);
             this.password.TabIndex = 7;
             this.password.UseSystemPasswordChar = true;
             this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
@@ -70,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(191, 89);
+            this.label1.Location = new System.Drawing.Point(689, 95);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
@@ -80,10 +80,10 @@
             // 
             // idNumber
             // 
-            this.idNumber.Location = new System.Drawing.Point(52, 89);
+            this.idNumber.Location = new System.Drawing.Point(406, 92);
             this.idNumber.Margin = new System.Windows.Forms.Padding(2);
             this.idNumber.Name = "idNumber";
-            this.idNumber.Size = new System.Drawing.Size(131, 20);
+            this.idNumber.Size = new System.Drawing.Size(245, 20);
             this.idNumber.TabIndex = 5;
             this.idNumber.TextChanged += new System.EventHandler(this.idNumber_TextChanged);
             // 
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.password);

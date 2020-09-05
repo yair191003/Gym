@@ -11,28 +11,23 @@ using System.Data.OleDb;
 
 namespace Gym
 {
-    public partial class FormAddEmployee : Form
+    public partial class FormAddSubscribers : Form
     {
         private OleDbConnection dataConnection;
-        private bool isManager;
-        public FormAddEmployee(OleDbConnection dataConnection, bool isManager)
+        public FormAddSubscribers(OleDbConnection dataConnection)
         {
             InitializeComponent();
             this.dataConnection = dataConnection;
-            this.isManager = isManager;
-            if (!isManager)
-                buttonAdd.Enabled = false;
             FillCityCombo();
-
-
         }
 
-        private void FormAddEmployee_Load(object sender, EventArgs e)
+        private void FormAddSubscribers_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSetCities.tblCities' table. You can move, or remove it, as needed.
-            this.tblCitiesTableAdapter.Fill(this.dataSetCities.tblCities);
-            this.tblEmployeesTableAdapter.Fill(this.dataSetEmployees.tblEmployees);
+            // TODO: This line of code loads data into the 'dataSetSubscribers.tblSubscribers' table. You can move, or remove it, as needed.
+            this.tblSubscribersTableAdapter.Fill(this.dataSetSubscribers.tblSubscribers);
+
         }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             try
@@ -40,24 +35,24 @@ namespace Gym
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
                 string str = string.Format
-                                    ("INSERT INTO tblemployees " +
-                                     "(employId, employFirstName, employLastName, employBirthDate, employAddress, employCity, employPhone, employMobile, employMail,employPassword,employIsAdmin, employPicture) " +
-                                     " VALUES ( {0}, \"{1}\", \"{2}\", \"{3}\", \"{4}\", \"{5}\", \"{6}\", \"{7}\",\"{8}\", \"{9}\", {10}, \"{11}\")",
-                                       EmployId.Text, EmployFirstName.Text, EmployLastName.Text,EmployBirthDate.Value,
-                                       EmployAddress.Text, comboCity.Text, phone.Text, mobile.Text,EmployMail.Text,EmployPassword.Text, isManeger.Checked, pictureLocation.Text);
+                                    ("INSERT INTO tblSubscribers " +
+                                     "(subscrId, subscrFirstName, subscrLastName, subscrBirthDate, subscrAddress, subscrCity, subscrPhone, subscrMobile, subscrMail, subscrPicture) " +
+                                     " VALUES ( {0}, \"{1}\", \"{2}\", \"{3}\", \"{4}\", \"{5}\", \"{6}\", \"{7}\",\"{8}\", \"{9}\")",
+                                       subscrId.Text, subscrFirstName.Text, subscrLastName.Text, subscrBirthDate.Value,
+                                       subscrAddress.Text, comboCity.Text, phone.Text, mobile.Text, subscrMail.Text, pictureLocation.Text);
                 datacommand.CommandText = str;
                 datacommand.ExecuteNonQuery();
-                MessageBox.Show("Insert into tblEmployees ended successfully");
+                MessageBox.Show("Insert into tblSubscribers ended successfully");
                 RefreshDataGridView();
 
             }
             catch (Exception err)
             {
-                MessageBox.Show("Insert into tblemployees failed \n" + err.Message, "Error",
+                MessageBox.Show("Insert into tblSubscribers failed \n" + err.Message, "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void FillCityCombo()                                   // Populate cities combobox
+        private void FillCityCombo()                                  
         {
             try
             {
@@ -86,8 +81,8 @@ namespace Gym
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
                 string sqlCommand = "SELECT   * " +
-                                     "FROM     tblEmployees " +
-                                     "ORDER BY employID";
+                                     "FROM     tblSubscribers " +
+                                     "ORDER BY subscrID";
                 OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sqlCommand, dataConnection);
                 DataTable tbl = new DataTable();
                 dataAdapter.Fill(tbl);
@@ -108,6 +103,5 @@ namespace Gym
             pictureBox1.ImageLocation = pictureFileName;
             pictureLocation.Text = pictureFileName;
         }
-        
     }
 }

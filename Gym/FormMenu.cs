@@ -123,5 +123,61 @@ namespace Gym
             frm.Show();
             frm.Disposed += new EventHandler(frGym_Disposed);
         }
+
+        private void AddAimsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddAims frm = new FormAddAims(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void AddCitiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddCities frm = new FormAddCities(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void AddPersonalsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddPersonals frm = new FormAddPersonals(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void AddRoomsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddRooms frm = new FormAddRooms(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void AddSubscribersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddSubscribers frm = new FormAddSubscribers(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void AddToolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddTools frm = new FormAddTools(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void AddToolsInRoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddToolsInRoom frm = new FormAddToolsInRoom(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
     }
 }
