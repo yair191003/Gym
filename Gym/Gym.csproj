@@ -63,6 +63,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetEmployees.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetPersonals.cs">
+      <DependentUpon>DataSetPersonals.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DataSetPersonals.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -230,6 +234,12 @@
     <Compile Include="FormTblTypes.Designer.cs">
       <DependentUpon>FormTblTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateEmployee.Designer.cs">
+      <DependentUpon>FormUpdateEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAddAims.resx">
@@ -297,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTblTypes.resx">
       <DependentUpon>FormTblTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateEmployee.resx">
+      <DependentUpon>FormUpdateEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

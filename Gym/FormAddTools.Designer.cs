@@ -44,6 +44,7 @@
             this.dataSetTools = new Gym.DataSetTools();
             this.tblToolsTableAdapter = new Gym.DataSetToolsTableAdapters.tblToolsTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToolsBindingSource)).BeginInit();
@@ -90,12 +91,14 @@
             this.buttonBrowse.TabIndex = 78;
             this.buttonBrowse.Text = ". . .עיון";
             this.buttonBrowse.UseVisualStyleBackColor = true;
+            this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click_1);
             // 
             // pictureLocation
             // 
             this.pictureLocation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureLocation.Location = new System.Drawing.Point(416, 153);
             this.pictureLocation.Name = "pictureLocation";
+            this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
             this.pictureLocation.TabIndex = 77;
             // 
@@ -125,6 +128,7 @@
             // 
             this.toolName.Location = new System.Drawing.Point(416, 102);
             this.toolName.Name = "toolName";
+            this.toolName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.toolName.Size = new System.Drawing.Size(232, 20);
             this.toolName.TabIndex = 79;
             // 
@@ -175,6 +179,10 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
+            // 
             // FormAddTools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,5 +226,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn toolNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn toolPictureDataGridViewTextBoxColumn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
     }
 }

@@ -23,8 +23,6 @@ namespace Gym
             if (!isManager)
                 buttonAdd.Enabled = false;
             FillCityCombo();
-
-
         }
 
         private void FormAddEmployee_Load(object sender, EventArgs e)
@@ -108,6 +106,10 @@ namespace Gym
             pictureBox1.ImageLocation = pictureFileName;
             pictureLocation.Text = pictureFileName;
         }
-        
+
+        private void comboCity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

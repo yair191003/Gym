@@ -179,5 +179,29 @@ namespace Gym
             frm.Show();
             frm.Disposed += new EventHandler(frGym_Disposed);
         }
+
+        private void AddTrainingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddTrainings frm = new FormAddTrainings(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void AddTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAddTypes frm = new FormAddTypes(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed);
+        }
+
+        private void updateEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormUpdateEmployee frm = new FormUpdateEmployee(dataConnection, employIsAdmin);
+            frm.Show();
+            frm.Disposed += new EventHandler(frGym_Disposed); 
+        }
     }
 }

@@ -35,22 +35,22 @@
             this.roomID = new System.Windows.Forms.TextBox();
             this.roomName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.roomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomPictureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblRoomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetRooms = new Gym.DataSetRooms();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonBrowse = new System.Windows.Forms.Button();
             this.pictureLocation = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.dataSetRooms = new Gym.DataSetRooms();
-            this.tblRoomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblRoomsTableAdapter = new Gym.DataSetRoomsTableAdapters.tblRoomsTableAdapter();
-            this.roomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomPictureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetRooms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,6 +85,7 @@
             // 
             this.roomID.Location = new System.Drawing.Point(412, 90);
             this.roomID.Name = "roomID";
+            this.roomID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.roomID.Size = new System.Drawing.Size(232, 20);
             this.roomID.TabIndex = 3;
             // 
@@ -92,6 +93,7 @@
             // 
             this.roomName.Location = new System.Drawing.Point(412, 147);
             this.roomName.Name = "roomName";
+            this.roomName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.roomName.Size = new System.Drawing.Size(232, 20);
             this.roomName.TabIndex = 4;
             // 
@@ -112,6 +114,34 @@
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.Size = new System.Drawing.Size(1160, 297);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // roomIDDataGridViewTextBoxColumn
+            // 
+            this.roomIDDataGridViewTextBoxColumn.DataPropertyName = "roomID";
+            this.roomIDDataGridViewTextBoxColumn.HeaderText = "מספר חדר";
+            this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
+            // 
+            // roomNameDataGridViewTextBoxColumn
+            // 
+            this.roomNameDataGridViewTextBoxColumn.DataPropertyName = "roomName";
+            this.roomNameDataGridViewTextBoxColumn.HeaderText = "שם החדר";
+            this.roomNameDataGridViewTextBoxColumn.Name = "roomNameDataGridViewTextBoxColumn";
+            // 
+            // roomPictureDataGridViewTextBoxColumn
+            // 
+            this.roomPictureDataGridViewTextBoxColumn.DataPropertyName = "roomPicture";
+            this.roomPictureDataGridViewTextBoxColumn.HeaderText = "תמונה";
+            this.roomPictureDataGridViewTextBoxColumn.Name = "roomPictureDataGridViewTextBoxColumn";
+            // 
+            // tblRoomsBindingSource
+            // 
+            this.tblRoomsBindingSource.DataMember = "tblRooms";
+            this.tblRoomsBindingSource.DataSource = this.dataSetRooms;
+            // 
+            // dataSetRooms
+            // 
+            this.dataSetRooms.DataSetName = "DataSetRooms";
+            this.dataSetRooms.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pictureBox1
             // 
@@ -141,6 +171,7 @@
             this.pictureLocation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureLocation.Location = new System.Drawing.Point(412, 205);
             this.pictureLocation.Name = "pictureLocation";
+            this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
             this.pictureLocation.TabIndex = 51;
             // 
@@ -166,37 +197,9 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // dataSetRooms
-            // 
-            this.dataSetRooms.DataSetName = "DataSetRooms";
-            this.dataSetRooms.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblRoomsBindingSource
-            // 
-            this.tblRoomsBindingSource.DataMember = "tblRooms";
-            this.tblRoomsBindingSource.DataSource = this.dataSetRooms;
-            // 
             // tblRoomsTableAdapter
             // 
             this.tblRoomsTableAdapter.ClearBeforeFill = true;
-            // 
-            // roomIDDataGridViewTextBoxColumn
-            // 
-            this.roomIDDataGridViewTextBoxColumn.DataPropertyName = "roomID";
-            this.roomIDDataGridViewTextBoxColumn.HeaderText = "מספר חדר";
-            this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
-            // 
-            // roomNameDataGridViewTextBoxColumn
-            // 
-            this.roomNameDataGridViewTextBoxColumn.DataPropertyName = "roomName";
-            this.roomNameDataGridViewTextBoxColumn.HeaderText = "שם החדר";
-            this.roomNameDataGridViewTextBoxColumn.Name = "roomNameDataGridViewTextBoxColumn";
-            // 
-            // roomPictureDataGridViewTextBoxColumn
-            // 
-            this.roomPictureDataGridViewTextBoxColumn.DataPropertyName = "roomPicture";
-            this.roomPictureDataGridViewTextBoxColumn.HeaderText = "תמונה";
-            this.roomPictureDataGridViewTextBoxColumn.Name = "roomPictureDataGridViewTextBoxColumn";
             // 
             // openFileDialog1
             // 
@@ -222,9 +225,9 @@
             this.Text = "FormAddRooms";
             this.Load += new System.EventHandler(this.FormAddRooms_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetRooms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

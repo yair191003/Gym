@@ -51,6 +51,8 @@
             this.AddToolsInRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddCitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.עדכוןToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +60,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tabelsToolStripMenuItem,
-            this.ToolStripMenuItemAddEmpoyee});
+            this.ToolStripMenuItemAddEmpoyee,
+            this.עדכוןToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
@@ -195,6 +198,7 @@
             this.AddTypesToolStripMenuItem.Name = "AddTypesToolStripMenuItem";
             this.AddTypesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.AddTypesToolStripMenuItem.Text = "הוספת סוגי אימונים";
+            this.AddTypesToolStripMenuItem.Click += new System.EventHandler(this.AddTypesToolStripMenuItem_Click);
             // 
             // AddPersonalsToolStripMenuItem
             // 
@@ -236,6 +240,22 @@
             this.AddTrainingToolStripMenuItem.Name = "AddTrainingToolStripMenuItem";
             this.AddTrainingToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.AddTrainingToolStripMenuItem.Text = "הוספת אימונים";
+            this.AddTrainingToolStripMenuItem.Click += new System.EventHandler(this.AddTrainingToolStripMenuItem_Click);
+            // 
+            // עדכוןToolStripMenuItem
+            // 
+            this.עדכוןToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateEmployeeToolStripMenuItem});
+            this.עדכוןToolStripMenuItem.Name = "עדכוןToolStripMenuItem";
+            this.עדכוןToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.עדכוןToolStripMenuItem.Text = "&עדכון";
+            // 
+            // updateEmployeeToolStripMenuItem
+            // 
+            this.updateEmployeeToolStripMenuItem.Name = "updateEmployeeToolStripMenuItem";
+            this.updateEmployeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateEmployeeToolStripMenuItem.Text = "עדכון עובדים";
+            this.updateEmployeeToolStripMenuItem.Click += new System.EventHandler(this.updateEmployeeToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
@@ -279,6 +299,8 @@
         private System.Windows.Forms.ToolStripMenuItem AddToolsInRoomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AddCitiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AddTrainingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem עדכוןToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateEmployeeToolStripMenuItem;
 
     }
 }

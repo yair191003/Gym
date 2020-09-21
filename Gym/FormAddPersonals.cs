@@ -18,6 +18,9 @@ namespace Gym
         {
             InitializeComponent();
             this.dataConnection = dataConnection;
+            FillIDCombo();
+            FillTypeCombo();
+            FillDayCombo();
         }
 
         private void FormAddPersonals_Load(object sender, EventArgs e)
@@ -25,6 +28,69 @@ namespace Gym
             // TODO: This line of code loads data into the 'dataSetPersonals.tblPersonals' table. You can move, or remove it, as needed.
             this.tblPersonalsTableAdapter.Fill(this.dataSetPersonals.tblPersonals);
 
+        }
+        private void FillIDCombo()                                   // Populate cities combobox
+        {
+            try
+            {
+                OleDbCommand datacommand = new OleDbCommand();
+                datacommand.Connection = dataConnection;
+                datacommand.CommandText = "SELECT subscrID " +
+                                          "FROM tblSubscribers " +
+                                          "ORDER BY subscrID";
+                OleDbDataReader dataReader = datacommand.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    comboID.Items.Add(dataReader.GetInt32(0));
+                }
+                dataReader.Close();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Fill Subscribers combobox failed \n" + err.Message, "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void FillDayCombo()
+        {
+            try
+            {
+
+                comboDay.Items.Add("ראשון");
+                comboDay.Items.Add("שני");
+                comboDay.Items.Add("שלישי");
+                comboDay.Items.Add("רביעי");
+                comboDay.Items.Add("חמישי");
+                comboDay.Items.Add("שישי");
+                comboDay.Items.Add("שבת");
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Fill Day combobox failed \n" + err.Message, "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void FillTypeCombo()
+        {
+            try
+            {
+                OleDbCommand datacommand = new OleDbCommand();
+                datacommand.Connection = dataConnection;
+                datacommand.CommandText = "SELECT typeName " +
+                                          "FROM tblTypes " +
+                                          "ORDER BY typeName";
+                OleDbDataReader dataReader = datacommand.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    comboType.Items.Add(dataReader.GetString(0));
+                }
+                dataReader.Close();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Fill Type combobox failed \n" + err.Message, "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,8 +102,8 @@ namespace Gym
                 string str = string.Format
                                     ("INSERT INTO tblpersonals " +
                                      "(personalID, personalNum, personalType, personalDay) " +
-                                     " VALUES ( \"{0}\", \"{1}\", \"{2}\", \"{3}\")",
-                                       personalId.Text, personalNum.Text, personalType.Text, personalDay.Text);
+                                     " VALUES ( {0}, {1}, \"{2}\", \"{3}\")",
+                                       comboID.Text, personalNum.Text, comboType.Text, comboDay.Text);
                 datacommand.CommandText = str;
                 datacommand.ExecuteNonQuery();
                 MessageBox.Show("Insert into tblPersonals ended successfully");
@@ -62,8 +128,8 @@ namespace Gym
                 OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sqlCommand, dataConnection);
                 DataTable tbl = new DataTable();
                 dataAdapter.Fill(tbl);
-                dataGridView1.DataSource = tbl;
-                dataGridView1.AllowUserToAddRows = false;
+                dataGridView2.DataSource = tbl;
+                dataGridView2.AllowUserToAddRows = false;
             }
             catch (Exception err)
             {
@@ -71,5 +137,6 @@ namespace Gym
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
     }
 }

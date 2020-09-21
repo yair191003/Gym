@@ -33,20 +33,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tirRoomID = new System.Windows.Forms.TextBox();
-            this.tirToolName = new System.Windows.Forms.TextBox();
             this.tirRoomAmount = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.dataSetToolsInRoom = new Gym.DataSetToolsInRoom();
-            this.tblToolsInRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblToolsInRoomTableAdapter = new Gym.DataSetToolsInRoomTableAdapters.tblToolsInRoomTableAdapter();
             this.tirRoomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tirToolNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tirRoomAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblToolsInRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetToolsInRoom = new Gym.DataSetToolsInRoom();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.tblToolsInRoomTableAdapter = new Gym.DataSetToolsInRoomTableAdapters.tblToolsInRoomTableAdapter();
+            this.comboRoom = new System.Windows.Forms.ComboBox();
+            this.comboTool = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetToolsInRoom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToolsInRoomBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetToolsInRoom)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,24 +86,11 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "כמות";
             // 
-            // tirRoomID
-            // 
-            this.tirRoomID.Location = new System.Drawing.Point(387, 123);
-            this.tirRoomID.Name = "tirRoomID";
-            this.tirRoomID.Size = new System.Drawing.Size(236, 20);
-            this.tirRoomID.TabIndex = 4;
-            // 
-            // tirToolName
-            // 
-            this.tirToolName.Location = new System.Drawing.Point(387, 170);
-            this.tirToolName.Name = "tirToolName";
-            this.tirToolName.Size = new System.Drawing.Size(236, 20);
-            this.tirToolName.TabIndex = 5;
-            // 
             // tirRoomAmount
             // 
             this.tirRoomAmount.Location = new System.Drawing.Point(387, 223);
             this.tirRoomAmount.Name = "tirRoomAmount";
+            this.tirRoomAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tirRoomAmount.Size = new System.Drawing.Size(236, 20);
             this.tirRoomAmount.TabIndex = 6;
             // 
@@ -121,32 +108,6 @@
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.Size = new System.Drawing.Size(1160, 327);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.buttonAdd.Location = new System.Drawing.Point(483, 282);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(80, 34);
-            this.buttonAdd.TabIndex = 66;
-            this.buttonAdd.Text = "הוסף";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
-            // dataSetToolsInRoom
-            // 
-            this.dataSetToolsInRoom.DataSetName = "DataSetToolsInRoom";
-            this.dataSetToolsInRoom.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblToolsInRoomBindingSource
-            // 
-            this.tblToolsInRoomBindingSource.DataMember = "tblToolsInRoom";
-            this.tblToolsInRoomBindingSource.DataSource = this.dataSetToolsInRoom;
-            // 
-            // tblToolsInRoomTableAdapter
-            // 
-            this.tblToolsInRoomTableAdapter.ClearBeforeFill = true;
             // 
             // tirRoomIDDataGridViewTextBoxColumn
             // 
@@ -166,16 +127,60 @@
             this.tirRoomAmountDataGridViewTextBoxColumn.HeaderText = "כמות";
             this.tirRoomAmountDataGridViewTextBoxColumn.Name = "tirRoomAmountDataGridViewTextBoxColumn";
             // 
+            // tblToolsInRoomBindingSource
+            // 
+            this.tblToolsInRoomBindingSource.DataMember = "tblToolsInRoom";
+            this.tblToolsInRoomBindingSource.DataSource = this.dataSetToolsInRoom;
+            // 
+            // dataSetToolsInRoom
+            // 
+            this.dataSetToolsInRoom.DataSetName = "DataSetToolsInRoom";
+            this.dataSetToolsInRoom.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonAdd.Location = new System.Drawing.Point(483, 282);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(80, 34);
+            this.buttonAdd.TabIndex = 66;
+            this.buttonAdd.Text = "הוסף";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
+            // tblToolsInRoomTableAdapter
+            // 
+            this.tblToolsInRoomTableAdapter.ClearBeforeFill = true;
+            // 
+            // comboRoom
+            // 
+            this.comboRoom.FormattingEnabled = true;
+            this.comboRoom.Location = new System.Drawing.Point(387, 123);
+            this.comboRoom.Name = "comboRoom";
+            this.comboRoom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboRoom.Size = new System.Drawing.Size(236, 21);
+            this.comboRoom.TabIndex = 67;
+            // 
+            // comboTool
+            // 
+            this.comboTool.FormattingEnabled = true;
+            this.comboTool.Location = new System.Drawing.Point(387, 173);
+            this.comboTool.Name = "comboTool";
+            this.comboTool.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboTool.Size = new System.Drawing.Size(236, 21);
+            this.comboTool.TabIndex = 68;
+            // 
             // FormAddToolsInRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.comboTool);
+            this.Controls.Add(this.comboRoom);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tirRoomAmount);
-            this.Controls.Add(this.tirToolName);
-            this.Controls.Add(this.tirRoomID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -184,8 +189,8 @@
             this.Text = "FormAddToolsInRoom";
             this.Load += new System.EventHandler(this.FormAddToolsInRoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetToolsInRoom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToolsInRoomBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetToolsInRoom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,8 +202,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tirRoomID;
-        private System.Windows.Forms.TextBox tirToolName;
         private System.Windows.Forms.TextBox tirRoomAmount;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonAdd;
@@ -208,5 +211,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tirRoomIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tirToolNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tirRoomAmountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox comboRoom;
+        private System.Windows.Forms.ComboBox comboTool;
     }
 }

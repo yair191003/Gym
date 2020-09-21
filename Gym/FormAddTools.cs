@@ -79,5 +79,15 @@ namespace Gym
             pictureBox1.ImageLocation = pictureFileName;
             pictureLocation.Text = pictureFileName;
         }
+
+        private void buttonBrowse_Click_1(object sender, EventArgs e)
+        {
+       
+            DialogResult dlgResult = openFileDialog1.ShowDialog();
+            string pictureFileName = openFileDialog1.FileName;
+            pictureBox1.ImageLocation = pictureFileName;
+            pictureLocation.Text = pictureFileName;
+       
+        }
     }
 }

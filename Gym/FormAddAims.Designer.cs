@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataSetAims = new Gym.DataSetAims();
-            this.tblAimsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblAimsTableAdapter = new Gym.DataSetAimsTableAdapters.tblAimsTableAdapter();
             this.aimNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aimPictureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblAimsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetAims = new Gym.DataSetAims();
+            this.tblAimsTableAdapter = new Gym.DataSetAimsTableAdapters.tblAimsTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AimName = new System.Windows.Forms.TextBox();
@@ -45,8 +45,8 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetAims)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAimsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetAims)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,20 +67,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1160, 374);
             this.dataGridView1.TabIndex = 0;
             // 
-            // dataSetAims
-            // 
-            this.dataSetAims.DataSetName = "DataSetAims";
-            this.dataSetAims.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblAimsBindingSource
-            // 
-            this.tblAimsBindingSource.DataMember = "tblAims";
-            this.tblAimsBindingSource.DataSource = this.dataSetAims;
-            // 
-            // tblAimsTableAdapter
-            // 
-            this.tblAimsTableAdapter.ClearBeforeFill = true;
-            // 
             // aimNameDataGridViewTextBoxColumn
             // 
             this.aimNameDataGridViewTextBoxColumn.DataPropertyName = "aimName";
@@ -92,6 +78,20 @@
             this.aimPictureDataGridViewTextBoxColumn.DataPropertyName = "aimPicture";
             this.aimPictureDataGridViewTextBoxColumn.HeaderText = "תמונה";
             this.aimPictureDataGridViewTextBoxColumn.Name = "aimPictureDataGridViewTextBoxColumn";
+            // 
+            // tblAimsBindingSource
+            // 
+            this.tblAimsBindingSource.DataMember = "tblAims";
+            this.tblAimsBindingSource.DataSource = this.dataSetAims;
+            // 
+            // dataSetAims
+            // 
+            this.dataSetAims.DataSetName = "DataSetAims";
+            this.dataSetAims.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblAimsTableAdapter
+            // 
+            this.tblAimsTableAdapter.ClearBeforeFill = true;
             // 
             // label1
             // 
@@ -107,6 +107,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(901, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(247, 219);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -114,6 +115,7 @@
             // 
             this.AimName.Location = new System.Drawing.Point(424, 84);
             this.AimName.Name = "AimName";
+            this.AimName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.AimName.Size = new System.Drawing.Size(232, 20);
             this.AimName.TabIndex = 3;
             // 
@@ -144,6 +146,7 @@
             this.pictureLocation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureLocation.Location = new System.Drawing.Point(424, 112);
             this.pictureLocation.Name = "pictureLocation";
+            this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
             this.pictureLocation.TabIndex = 51;
             // 
@@ -191,8 +194,8 @@
             this.Text = "FormAddAims";
             this.Load += new System.EventHandler(this.FormAddAims_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetAims)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAimsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetAims)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

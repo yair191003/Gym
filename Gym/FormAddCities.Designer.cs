@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cityNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblCitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetCities = new Gym.DataSetCities();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.CityName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataSetCities = new Gym.DataSetCities();
-            this.tblCitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblCitiesTableAdapter = new Gym.DataSetCitiesTableAdapters.tblCitiesTableAdapter();
-            this.cityNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetCities)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCitiesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetCities)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -58,6 +58,22 @@
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.Size = new System.Drawing.Size(1160, 376);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // cityNameDataGridViewTextBoxColumn
+            // 
+            this.cityNameDataGridViewTextBoxColumn.DataPropertyName = "cityName";
+            this.cityNameDataGridViewTextBoxColumn.HeaderText = "שם העיר";
+            this.cityNameDataGridViewTextBoxColumn.Name = "cityNameDataGridViewTextBoxColumn";
+            // 
+            // tblCitiesBindingSource
+            // 
+            this.tblCitiesBindingSource.DataMember = "tblCities";
+            this.tblCitiesBindingSource.DataSource = this.dataSetCities;
+            // 
+            // dataSetCities
+            // 
+            this.dataSetCities.DataSetName = "DataSetCities";
+            this.dataSetCities.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -80,8 +96,9 @@
             // 
             // CityName
             // 
-            this.CityName.Location = new System.Drawing.Point(465, 96);
+            this.CityName.Location = new System.Drawing.Point(465, 103);
             this.CityName.Name = "CityName";
+            this.CityName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CityName.Size = new System.Drawing.Size(169, 20);
             this.CityName.TabIndex = 3;
             // 
@@ -96,25 +113,9 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataSetCities
-            // 
-            this.dataSetCities.DataSetName = "DataSetCities";
-            this.dataSetCities.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblCitiesBindingSource
-            // 
-            this.tblCitiesBindingSource.DataMember = "tblCities";
-            this.tblCitiesBindingSource.DataSource = this.dataSetCities;
-            // 
             // tblCitiesTableAdapter
             // 
             this.tblCitiesTableAdapter.ClearBeforeFill = true;
-            // 
-            // cityNameDataGridViewTextBoxColumn
-            // 
-            this.cityNameDataGridViewTextBoxColumn.DataPropertyName = "cityName";
-            this.cityNameDataGridViewTextBoxColumn.HeaderText = "שם העיר";
-            this.cityNameDataGridViewTextBoxColumn.Name = "cityNameDataGridViewTextBoxColumn";
             // 
             // FormAddCities
             // 
@@ -130,8 +131,8 @@
             this.Text = "FormAddCities";
             this.Load += new System.EventHandler(this.FormAddCities_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetCities)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCitiesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetCities)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -81,6 +81,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label1.Location = new System.Drawing.Point(471, 9);
             this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(106, 24);
             this.label1.TabIndex = 56;
             this.label1.Text = "הוספת מנוי";
@@ -100,6 +101,7 @@
             this.subscrId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.subscrId.Location = new System.Drawing.Point(593, 45);
             this.subscrId.Name = "subscrId";
+            this.subscrId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrId.Size = new System.Drawing.Size(100, 20);
             this.subscrId.TabIndex = 57;
             // 
@@ -109,6 +111,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(514, 47);
             this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 60;
             this.label3.Text = "שם פרטי";
@@ -128,6 +131,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(313, 47);
             this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 62;
             this.label4.Text = "שם משפחה";
@@ -147,6 +151,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(666, 90);
             this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 64;
             this.label5.Text = "תאריך לידה";
@@ -157,6 +162,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(357, 90);
             this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 66;
             this.label6.Text = "כתובת";
@@ -208,6 +214,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(502, 131);
             this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label8.Size = new System.Drawing.Size(38, 13);
             this.label8.TabIndex = 68;
             this.label8.Text = "טלפון";
@@ -218,6 +225,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(327, 131);
             this.label9.Name = "label9";
+            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label9.Size = new System.Drawing.Size(29, 13);
             this.label9.TabIndex = 69;
             this.label9.Text = "נייד";
@@ -227,6 +235,7 @@
             this.phone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.phone.Location = new System.Drawing.Point(380, 128);
             this.phone.Name = "phone";
+            this.phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.phone.Size = new System.Drawing.Size(100, 20);
             this.phone.TabIndex = 71;
             // 
@@ -235,6 +244,7 @@
             this.mobile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.mobile.Location = new System.Drawing.Point(205, 127);
             this.mobile.Name = "mobile";
+            this.mobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mobile.Size = new System.Drawing.Size(100, 20);
             this.mobile.TabIndex = 72;
             // 
@@ -264,6 +274,7 @@
             this.pictureLocation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureLocation.Location = new System.Drawing.Point(459, 236);
             this.pictureLocation.Name = "pictureLocation";
+            this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
             this.pictureLocation.TabIndex = 75;
             // 
@@ -273,6 +284,7 @@
             this.buttonBrowse.Location = new System.Drawing.Point(380, 237);
             this.buttonBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBrowse.Name = "buttonBrowse";
+            this.buttonBrowse.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonBrowse.Size = new System.Drawing.Size(56, 19);
             this.buttonBrowse.TabIndex = 76;
             this.buttonBrowse.Text = ". . .עיון";
@@ -284,6 +296,7 @@
             this.subscrBirthDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.subscrBirthDate.Location = new System.Drawing.Point(450, 84);
             this.subscrBirthDate.Name = "subscrBirthDate";
+            this.subscrBirthDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrBirthDate.Size = new System.Drawing.Size(200, 20);
             this.subscrBirthDate.TabIndex = 77;
             // 
@@ -302,6 +315,7 @@
             this.subscrMail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.subscrMail.Location = new System.Drawing.Point(566, 171);
             this.subscrMail.Name = "subscrMail";
+            this.subscrMail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrMail.Size = new System.Drawing.Size(100, 20);
             this.subscrMail.TabIndex = 79;
             // 
