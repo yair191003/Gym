@@ -2,65 +2,62 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Gym
 {
-    public partial class FormUpdateEmployee : Form
+    public partial class FormUpdateSubscribers : Form
     {
-        private OleDbConnection dataConnection;      
+        private OleDbConnection dataConnection;
         private int lastRow = 0;
-        private bool employIsAdmin;
-        public FormUpdateEmployee(OleDbConnection dataConnection, bool employIsAdmin)
+        public FormUpdateSubscribers(OleDbConnection dataConnection)
         {
             InitializeComponent();
             this.dataConnection = dataConnection;
-            this.employIsAdmin = employIsAdmin;
-            if (!employIsAdmin)
-                buttonUpdate.Enabled = false;
             FillCityCombo();
             RefreshDataGridView();
         }
 
-        private void FormUpdateEmployee_Load(object sender, EventArgs e)
+        private void FormUpdateSubscribers_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSetEmployees.tblEmployees' table. You can move, or remove it, as needed.
-            this.tblEmployeesTableAdapter.Fill(this.dataSetEmployees.tblEmployees);
+            // TODO: This line of code loads data into the 'dataSetSubscribers.tblSubscribers' table. You can move, or remove it, as needed.
+            this.tblSubscribersTableAdapter.Fill(this.dataSetSubscribers.tblSubscribers);
 
         }
+
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             try
             {
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
-                datacommand.CommandText = "UPDATE tblEmployees  \n" +
-                                          "SET    employFirstName    =  \"" + EmployFirstName.Text + "\" , \n" +
-                                                  "employLastName    =  \"" + EmployLastName.Text + "\" , \n" +
-                                                  "employAddress     =  \"" + EmployAddress.Text + "\" , \n" +
-                                                  "employCity    =  \"" + comboCity.Text + "\" , \n" +
-                                                  "employPhone       =  \"" + phone.Text + "\" , \n" +                                                  
-                                                  "employMobile      =  \"" + mobile.Text + "\" , \n" +
-                                                  "employMail       =  \"" + EmployMail.Text + "\" , \n" +
-                                                  "employPassword       =  \"" + EmployPassword.Text + "\" , \n" +
-                                                  "employIsAdmin =    " + isManeger.Checked + "   , \n" +
-                                                  "employPicture     =  \"" + pictureLocation.Text + "\"  \n" +
-                                          "WHERE  employID = " + EmployId.Text;
+                datacommand.CommandText = "UPDATE tblSubscribers  \n" +
+                                          "SET    subscrFirstName    =  \"" + subscrFirstName.Text + "\" , \n" +
+                                                  "subscrLastName    =  \"" + subscrLastName.Text + "\" , \n" +
+                                                  "subscrAddress     =  \"" + subscrAddress.Text + "\" , \n" +
+                                                  "subscrCity    =  \"" + comboCity.Text + "\" , \n" +
+                                                  "subscrPhone       =  \"" + phone.Text + "\" , \n" +
+                                                  "subscrMobile      =  \"" + mobile.Text + "\" , \n" +
+                                                  "subscrMail       =  \"" + subscrMail.Text + "\" , \n" +
+                                                  "subscrPicture     =  \"" + pictureLocation.Text + "\"  \n" +
+                                          "WHERE  subscrID = " + subscrID.Text;
                 datacommand.ExecuteNonQuery();
                 RefreshDataGridView();
                 dataGridView1.CurrentCell = dataGridView1[0, lastRow];
-                MessageBox.Show("Update tblEmployees ended successfluly");
+                MessageBox.Show("Update tblSubscribers ended successfluly");
             }
             catch (Exception err)
             {
-                MessageBox.Show("Update tblEmployees failed \n" + err.Message, "Error",
+                MessageBox.Show("Update tblSubscribers failed \n" + err.Message, "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+       
         private void FillCityCombo()                                   // Populate cities combobox
         {
             try
@@ -90,8 +87,8 @@ namespace Gym
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
                 string sqlCommand = "SELECT   * " +
-                                     "FROM     tblEmployees " +
-                                     "ORDER BY employID";
+                                     "FROM     tblSubscribers " +
+                                     "ORDER BY subscrID";
                 OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sqlCommand, dataConnection);
                 DataTable tbl = new DataTable();
                 dataAdapter.Fill(tbl);
@@ -104,7 +101,8 @@ namespace Gym
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void buttonBrowse_Click_1(object sender, EventArgs e)
+
+        private void buttonBrowse_Click(object sender, EventArgs e)
         {
             DialogResult dlgResult = openFileDialog1.ShowDialog();
             string pictureFileName = openFileDialog1.FileName;
@@ -119,7 +117,6 @@ namespace Gym
             buttonNext.Enabled = true;
             FillSelectedRow();
         }
-
         private void EnableButtons()
         {
             buttonPrev.Enabled = true;
@@ -133,17 +130,15 @@ namespace Gym
         {
             try
             {
-                EmployId.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                EmployFirstName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                EmployLastName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                EmployAddress.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                subscrID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                subscrFirstName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                subscrLastName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                subscrAddress.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
                 comboCity.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
                 phone.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
                 mobile.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-                EmployMail.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-                EmployPassword.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-                isManeger.Checked = dataGridView1.SelectedRows[0].Cells[10].Value.ToString() == "True";
-                pictureLocation.Text = dataGridView1.SelectedRows[0].Cells[11].Value.ToString();
+                subscrMail.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                pictureLocation.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
                 pictureBox1.ImageLocation = pictureLocation.Text;
                 dataGridView1.CurrentCell = dataGridView1[0, lastRow];
                 EnableButtons();
@@ -155,10 +150,10 @@ namespace Gym
             }
         }
 
-        private void buttonPrev_Click(object sender, EventArgs e)
+        private void buttonFirst_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows[lastRow].Selected = false;
-            lastRow--;
+            lastRow = 0;
             dataGridView1.Rows[lastRow].Selected = true;
             FillSelectedRow();
         }
@@ -171,18 +166,18 @@ namespace Gym
             FillSelectedRow();
         }
 
-        private void buttonFirst_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Rows[lastRow].Selected = false;
-            lastRow = 0;
-            dataGridView1.Rows[lastRow].Selected = true;
-            FillSelectedRow();
-        }
-
         private void buttonLast_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows[lastRow].Selected = false;
             lastRow = dataGridView1.Rows.Count - 1;
+            dataGridView1.Rows[lastRow].Selected = true;
+            FillSelectedRow();
+        }
+
+        private void buttonPrev_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows[lastRow].Selected = false;
+            lastRow--;
             dataGridView1.Rows[lastRow].Selected = true;
             FillSelectedRow();
         }

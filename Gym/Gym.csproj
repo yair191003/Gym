@@ -174,6 +174,18 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRptSubscribersInCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRptSubscribersInCity.Designer.cs">
+      <DependentUpon>FormRptSubscribersInCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRptToolsInRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRptToolsInRoom.Designer.cs">
+      <DependentUpon>FormRptToolsInRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTblSubscribers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,11 +246,59 @@
     <Compile Include="FormTblTypes.Designer.cs">
       <DependentUpon>FormTblTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUpdateTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateTools.Designer.cs">
+      <DependentUpon>FormUpdateTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateAims.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateAims.Designer.cs">
+      <DependentUpon>FormUpdateAims.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUpdateEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormUpdateEmployee.Designer.cs">
       <DependentUpon>FormUpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdatePersonals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdatePersonals.Designer.cs">
+      <DependentUpon>FormUpdatePersonals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateRooms.Designer.cs">
+      <DependentUpon>FormUpdateRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateSubscribers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateSubscribers.Designer.cs">
+      <DependentUpon>FormUpdateSubscribers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateToolsInRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateToolsInRoom.Designer.cs">
+      <DependentUpon>FormUpdateToolsInRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateTraining.Designer.cs">
+      <DependentUpon>FormUpdateTraining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateTypes.Designer.cs">
+      <DependentUpon>FormUpdateTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -278,6 +338,12 @@
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRptSubscribersInCity.resx">
+      <DependentUpon>FormRptSubscribersInCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRptToolsInRoom.resx">
+      <DependentUpon>FormRptToolsInRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTblSubscribers.resx">
       <DependentUpon>FormTblSubscribers.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,8 +374,32 @@
     <EmbeddedResource Include="FormTblTypes.resx">
       <DependentUpon>FormTblTypes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateTools.resx">
+      <DependentUpon>FormUpdateTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateAims.resx">
+      <DependentUpon>FormUpdateAims.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUpdateEmployee.resx">
       <DependentUpon>FormUpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdatePersonals.resx">
+      <DependentUpon>FormUpdatePersonals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateRooms.resx">
+      <DependentUpon>FormUpdateRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateSubscribers.resx">
+      <DependentUpon>FormUpdateSubscribers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateToolsInRoom.resx">
+      <DependentUpon>FormUpdateToolsInRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateTraining.resx">
+      <DependentUpon>FormUpdateTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateTypes.resx">
+      <DependentUpon>FormUpdateTypes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
