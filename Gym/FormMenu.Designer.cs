@@ -64,6 +64,7 @@
             this.דוחותToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RptToolsInRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RptsubscribersInCityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RptsubscribersByAgeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -337,7 +338,8 @@
             // 
             this.דוחותToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.RptToolsInRoomToolStripMenuItem,
-            this.RptsubscribersInCityToolStripMenuItem});
+            this.RptsubscribersInCityToolStripMenuItem,
+            this.RptsubscribersByAgeToolStripMenuItem});
             this.דוחותToolStripMenuItem.Name = "דוחותToolStripMenuItem";
             this.דוחותToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.דוחותToolStripMenuItem.Text = "&דוחות";
@@ -345,16 +347,23 @@
             // RptToolsInRoomToolStripMenuItem
             // 
             this.RptToolsInRoomToolStripMenuItem.Name = "RptToolsInRoomToolStripMenuItem";
-            this.RptToolsInRoomToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.RptToolsInRoomToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.RptToolsInRoomToolStripMenuItem.Text = "&דוח מכשיר בחדר";
             this.RptToolsInRoomToolStripMenuItem.Click += new System.EventHandler(this.RptToolsInRoomToolStripMenuItem_Click);
             // 
             // RptsubscribersInCityToolStripMenuItem
             // 
             this.RptsubscribersInCityToolStripMenuItem.Name = "RptsubscribersInCityToolStripMenuItem";
-            this.RptsubscribersInCityToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.RptsubscribersInCityToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.RptsubscribersInCityToolStripMenuItem.Text = "&דוח מנויים בעיר";
             this.RptsubscribersInCityToolStripMenuItem.Click += new System.EventHandler(this.RptsubscribersInCityToolStripMenuItem_Click);
+            // 
+            // RptsubscribersByAgeToolStripMenuItem
+            // 
+            this.RptsubscribersByAgeToolStripMenuItem.Name = "RptsubscribersByAgeToolStripMenuItem";
+            this.RptsubscribersByAgeToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.RptsubscribersByAgeToolStripMenuItem.Text = "&דוח מנויים על פי תחום גילים";
+            this.RptsubscribersByAgeToolStripMenuItem.Click += new System.EventHandler(this.RptsubscribersByAgeToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
@@ -411,6 +420,7 @@
         private System.Windows.Forms.ToolStripMenuItem דוחותToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RptToolsInRoomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RptsubscribersInCityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem RptsubscribersByAgeToolStripMenuItem;
 
     }
 }

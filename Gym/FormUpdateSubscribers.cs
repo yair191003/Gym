@@ -39,6 +39,7 @@ namespace Gym
                 datacommand.CommandText = "UPDATE tblSubscribers  \n" +
                                           "SET    subscrFirstName    =  \"" + subscrFirstName.Text + "\" , \n" +
                                                   "subscrLastName    =  \"" + subscrLastName.Text + "\" , \n" +
+                                                  "subscrBirthDate    =  #" + subscrBirthDate.Value.ToShortDateString() + "# , \n" +
                                                   "subscrAddress     =  \"" + subscrAddress.Text + "\" , \n" +
                                                   "subscrCity    =  \"" + comboCity.Text + "\" , \n" +
                                                   "subscrPhone       =  \"" + phone.Text + "\" , \n" +

@@ -283,5 +283,14 @@ namespace Gym
             frm.Show();
             frm.Disposed += new EventHandler(Form_Disposed); 
         }
+
+        private void RptsubscribersByAgeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormRptSbscribersByAge frm = new FormRptSbscribersByAge(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
     }
 }
