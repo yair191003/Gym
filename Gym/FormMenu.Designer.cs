@@ -65,6 +65,9 @@
             this.RptToolsInRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RptsubscribersInCityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RptsubscribersByAgeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -339,7 +342,10 @@
             this.דוחותToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.RptToolsInRoomToolStripMenuItem,
             this.RptsubscribersInCityToolStripMenuItem,
-            this.RptsubscribersByAgeToolStripMenuItem});
+            this.RptsubscribersByAgeToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.ToolStripMenuItem3,
+            this.toolStripMenuItem4});
             this.דוחותToolStripMenuItem.Name = "דוחותToolStripMenuItem";
             this.דוחותToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.דוחותToolStripMenuItem.Text = "&דוחות";
@@ -364,6 +370,27 @@
             this.RptsubscribersByAgeToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.RptsubscribersByAgeToolStripMenuItem.Text = "&דוח מנויים על פי תחום גילים";
             this.RptsubscribersByAgeToolStripMenuItem.Click += new System.EventHandler(this.RptsubscribersByAgeToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(215, 22);
+            this.toolStripMenuItem2.Text = "&דוח חדרים לפי מכשיר";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // ToolStripMenuItem3
+            // 
+            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
+            this.ToolStripMenuItem3.Size = new System.Drawing.Size(215, 22);
+            this.ToolStripMenuItem3.Text = "&דוח אימונים למנוי";
+            this.ToolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem3_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(215, 22);
+            this.toolStripMenuItem4.Text = "&דוח מנויים לסוג אימון";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // FormMenu
             // 
@@ -421,6 +448,9 @@
         private System.Windows.Forms.ToolStripMenuItem RptToolsInRoomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RptsubscribersInCityToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RptsubscribersByAgeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
 
     }
 }

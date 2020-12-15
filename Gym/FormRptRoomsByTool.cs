@@ -11,48 +11,43 @@ using System.Data.OleDb;
 
 namespace Gym
 {
-    public partial class FormRptSubscribersInCity : Form
+    public partial class FormRptRoomsByTool : Form
     {
         private OleDbConnection dataConnection;
-        private int subscrID;
-        private string cityName;
-        private string firstName;
-        private string lastName;
-        private string date;
-        private string address;
-        private string phone;
-        private string mobile;
-        private string email;
+        private string Tool;
+        private string roomID;
+        private string roomName;
         private string picture;
         private string saveColor = "";
-        public FormRptSubscribersInCity(OleDbConnection dataConnection)
+        public FormRptRoomsByTool(OleDbConnection dataConnection)
         {
             InitializeComponent();
             this.dataConnection = dataConnection;
-            FillCityCombo();
+            FillToolCombo();
         }
-        private void FillCityCombo()
+        private void FillToolCombo()
         {
             try
             {
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
-                datacommand.CommandText = "SELECT cityName " +
-                                          "FROM tblCities " +
-                                          "ORDER BY cityName";
+                datacommand.CommandText = "SELECT toolName " +
+                                          "FROM tblTools " +
+                                          "ORDER BY toolName";
                 OleDbDataReader dataReader = datacommand.ExecuteReader();
                 while (dataReader.Read())
                 {
-                    comboCity.Items.Add(dataReader.GetString(0));
+                    comboTool.Items.Add(dataReader.GetString(0));
                 }
                 dataReader.Close();
             }
             catch (Exception err)
             {
-                MessageBox.Show("Fill cities combobox failed \n" + err.Message, "Error",
+                MessageBox.Show("Fill Tool combobox failed \n" + err.Message, "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void buttonShow_Click(object sender, EventArgs e)
         {
             try
@@ -60,25 +55,49 @@ namespace Gym
                 int counter = 0;
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
-                datacommand.CommandText = "SELECT   * " +
-                                          "FROM     tblSubscribers   " +
-                                          "WHERE    subscrCity = \"" + comboCity.Text + "\" " +
-                                          "ORDER BY subscrCity";
+                datacommand.CommandText = "SELECT   tirRoomID " +
+                                          "FROM     tblToolsInRoom   " +
+                                          "WHERE    tirToolName = \"" + comboTool.Text + "\" ";
                 OleDbDataReader dataReader = datacommand.ExecuteReader();
-                cityName = comboCity.Text;
+                Tool = comboTool.Text;                
                 while (dataReader.Read())
                 {
-                    subscrID = dataReader.GetInt32(0);
-                    firstName = dataReader.GetString(1);
-                    lastName = dataReader.GetString(2);
-                    date = dataReader.GetDateTime(3).ToString();
-                    address = dataReader.GetString(4);
-                    phone = dataReader.GetString(6);
-                    mobile = dataReader.GetString(7);
-                    email = dataReader.GetString(8);
-                    if (!dataReader.IsDBNull(9))
+                    roomID = dataReader.GetInt32(0).ToString();
+                    GetRooms();
+                    counter++;
+                   
+                }
+               
+                dataReader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Select tblToolsInRoom failed " +
+                                 ex.Message, "Errors",
+                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void GetRooms()
+        {
+            try
+            {
+                int counter = 0;
+                OleDbCommand datacommand = new OleDbCommand();
+                datacommand.Connection = dataConnection;
+                datacommand.CommandText = "SELECT   *" +
+                                          " FROM    tblRooms " +
+                                          "WHERE    roomID = " + roomID + " " ;
+                OleDbDataReader dataReader = datacommand.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    roomName = dataReader.GetString(1);
+                    if (!dataReader.IsDBNull(2))
                     {
-                        picture = dataReader.GetString(9);
+                        picture = dataReader.GetString(2);
+                    }
+                    else
+                    {
+                        picture = "";
                     }
                     counter++;
                     EditListView(counter);
@@ -87,7 +106,7 @@ namespace Gym
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Select tblSubscribers failed " +
+                MessageBox.Show("Select tblRooms failed " +
                                  ex.Message, "Errors",
                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -96,20 +115,15 @@ namespace Gym
         {
             try
             {
-                string[] arr = new string[10];
+                string[] arr = new string[4];
                 if (counter == 1)
                 {
-                    arr[0] = cityName;
+                    arr[0] = Tool;
+                    arr[1] = roomID;
+
                 }
-                arr[1] = subscrID.ToString();
-                arr[2] = firstName;
-                arr[3] = lastName;
-                arr[4] = date;
-                arr[5] = address;
-                arr[6] = phone;
-                arr[7] = mobile;
-                arr[8] = email;
-                arr[9] = picture;
+                arr[2] = roomName;
+                arr[3] = picture;
                 ListViewItem item = new ListViewItem(arr);
                 if (saveColor != "")
                     item.ForeColor = Color.FromArgb(int.Parse(saveColor));
@@ -120,6 +134,11 @@ namespace Gym
                 MessageBox.Show("Edit listview item failed " + ex.Message, "Errors",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void buttonColor_Click(object sender, EventArgs e)

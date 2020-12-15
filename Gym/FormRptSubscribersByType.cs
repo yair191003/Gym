@@ -11,48 +11,45 @@ using System.Data.OleDb;
 
 namespace Gym
 {
-    public partial class FormRptSubscribersInCity : Form
+    public partial class FormRptSubscribersByType : Form
     {
         private OleDbConnection dataConnection;
-        private int subscrID;
-        private string cityName;
-        private string firstName;
-        private string lastName;
-        private string date;
-        private string address;
-        private string phone;
-        private string mobile;
-        private string email;
-        private string picture;
+        private string trainSubscrID;
+        private string trainDate;
+        private string trainHour;
+        private string trainType;
+        private string trainRoom;
+        private string trainTool;
         private string saveColor = "";
-        public FormRptSubscribersInCity(OleDbConnection dataConnection)
+        public FormRptSubscribersByType(OleDbConnection dataConnection)
         {
             InitializeComponent();
             this.dataConnection = dataConnection;
-            FillCityCombo();
+            FillTypeCombo();
         }
-        private void FillCityCombo()
+        private void FillTypeCombo()
         {
             try
             {
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
-                datacommand.CommandText = "SELECT cityName " +
-                                          "FROM tblCities " +
-                                          "ORDER BY cityName";
+                datacommand.CommandText = "SELECT typeName " +
+                                          "FROM tblTypes " +
+                                          "ORDER BY typeName";
                 OleDbDataReader dataReader = datacommand.ExecuteReader();
                 while (dataReader.Read())
                 {
-                    comboCity.Items.Add(dataReader.GetString(0));
+                    comboType.Items.Add(dataReader.GetString(0));
                 }
                 dataReader.Close();
             }
             catch (Exception err)
             {
-                MessageBox.Show("Fill cities combobox failed \n" + err.Message, "Error",
+                MessageBox.Show("Fill Type combobox failed \n" + err.Message, "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void buttonShow_Click(object sender, EventArgs e)
         {
             try
@@ -61,25 +58,19 @@ namespace Gym
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
                 datacommand.CommandText = "SELECT   * " +
-                                          "FROM     tblSubscribers   " +
-                                          "WHERE    subscrCity = \"" + comboCity.Text + "\" " +
-                                          "ORDER BY subscrCity";
+                                          " FROM tblTraining " +
+                                         "WHERE    trainType = \"" + comboType.Text + "\" " +
+                                          " ORDER BY trainType  ";
                 OleDbDataReader dataReader = datacommand.ExecuteReader();
-                cityName = comboCity.Text;
+               
                 while (dataReader.Read())
                 {
-                    subscrID = dataReader.GetInt32(0);
-                    firstName = dataReader.GetString(1);
-                    lastName = dataReader.GetString(2);
-                    date = dataReader.GetDateTime(3).ToString();
-                    address = dataReader.GetString(4);
-                    phone = dataReader.GetString(6);
-                    mobile = dataReader.GetString(7);
-                    email = dataReader.GetString(8);
-                    if (!dataReader.IsDBNull(9))
-                    {
-                        picture = dataReader.GetString(9);
-                    }
+                    trainSubscrID = dataReader.GetInt32(0).ToString();
+                    trainDate = dataReader.GetDateTime(1).ToShortDateString().ToString();
+                    trainHour = dataReader.GetDateTime(2).TimeOfDay.ToString();
+                    trainType = dataReader.GetString(3);
+                    trainRoom = dataReader.GetInt32(4).ToString();
+                    trainTool = dataReader.GetString(5);
                     counter++;
                     EditListView(counter);
                 }
@@ -87,7 +78,7 @@ namespace Gym
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Select tblSubscribers failed " +
+                MessageBox.Show("Select tblTraining failed " +
                                  ex.Message, "Errors",
                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -96,20 +87,17 @@ namespace Gym
         {
             try
             {
-                string[] arr = new string[10];
+                string[] arr = new string[6];
                 if (counter == 1)
                 {
-                    arr[0] = cityName;
+                    arr[0] = trainType;
+
                 }
-                arr[1] = subscrID.ToString();
-                arr[2] = firstName;
-                arr[3] = lastName;
-                arr[4] = date;
-                arr[5] = address;
-                arr[6] = phone;
-                arr[7] = mobile;
-                arr[8] = email;
-                arr[9] = picture;
+                arr[1] = trainSubscrID;
+                arr[2] = trainDate;
+                arr[3] = trainHour;
+                arr[4] = trainRoom;
+                arr[5] = trainTool;
                 ListViewItem item = new ListViewItem(arr);
                 if (saveColor != "")
                     item.ForeColor = Color.FromArgb(int.Parse(saveColor));

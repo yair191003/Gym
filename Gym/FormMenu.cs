@@ -292,5 +292,29 @@ namespace Gym
             frm.Disposed += new EventHandler(Form_Disposed); 
         }
 
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormRptRoomsByTool frm = new FormRptRoomsByTool(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
+        private void ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormRptTrainingOfSubsc frm = new FormRptTrainingOfSubsc(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormRptSubscribersByType frm = new FormRptSubscribersByType(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
     }
 }

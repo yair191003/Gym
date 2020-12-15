@@ -118,5 +118,10 @@ namespace Gym
         {
             listView1.Items.Clear();
         }
+
+        private void fromAge_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
