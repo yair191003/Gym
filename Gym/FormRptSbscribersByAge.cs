@@ -47,7 +47,7 @@ namespace Gym
                 {
                     var today = DateTime.Today;
                     age = DateTime.Now.Year - dataReader.GetDateTime(3).Year;
-                    if (age < Convert.ToInt32(toAge.Text) && age >= Convert.ToInt32(fromAge.Text))
+                    if (age <= Convert.ToInt32(toAge.Text) && age >= Convert.ToInt32(fromAge.Text))
                     {
                         subscrID = dataReader.GetInt32(0);
                         firstName = dataReader.GetString(1);

@@ -68,6 +68,8 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.תרשימיםToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chart1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +79,8 @@
             this.tabelsToolStripMenuItem,
             this.ToolStripMenuItemAddEmpoyee,
             this.עדכוןToolStripMenuItem,
-            this.דוחותToolStripMenuItem});
+            this.דוחותToolStripMenuItem,
+            this.תרשימיםToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
@@ -392,6 +395,21 @@
             this.toolStripMenuItem4.Text = "&דוח מנויים לסוג אימון";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
+            // תרשימיםToolStripMenuItem
+            // 
+            this.תרשימיםToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chart1ToolStripMenuItem});
+            this.תרשימיםToolStripMenuItem.Name = "תרשימיםToolStripMenuItem";
+            this.תרשימיםToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.תרשימיםToolStripMenuItem.Text = "&תרשימים";
+            // 
+            // chart1ToolStripMenuItem
+            // 
+            this.chart1ToolStripMenuItem.Name = "chart1ToolStripMenuItem";
+            this.chart1ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.chart1ToolStripMenuItem.Text = "&תרשים מכשירים בחדר";
+            this.chart1ToolStripMenuItem.Click += new System.EventHandler(this.chart1ToolStripMenuItem_Click);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,6 +469,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem תרשימיםToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chart1ToolStripMenuItem;
 
     }
 }

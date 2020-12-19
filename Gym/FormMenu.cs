@@ -316,5 +316,13 @@ namespace Gym
             frm.Disposed += new EventHandler(Form_Disposed); 
         }
 
+        private void chart1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormChartToolsInRoom frm = new FormChartToolsInRoom(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
     }
 }

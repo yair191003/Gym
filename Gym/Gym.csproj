@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -161,6 +162,12 @@
     </Compile>
     <Compile Include="FormAddTypes.Designer.cs">
       <DependentUpon>FormAddTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChartToolsInRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChartToolsInRoom.Designer.cs">
+      <DependentUpon>FormChartToolsInRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -355,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddTypes.resx">
       <DependentUpon>FormAddTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChartToolsInRoom.resx">
+      <DependentUpon>FormChartToolsInRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

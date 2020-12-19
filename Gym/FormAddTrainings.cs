@@ -81,7 +81,7 @@ namespace Gym
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
                 datacommand.CommandText = "SELECT roomID " +
-                                          "FROM tblRooms " +
+                                          "FROM     tblRooms " +
                                           "ORDER BY roomID";
                 OleDbDataReader dataReader = datacommand.ExecuteReader();
                 while (dataReader.Read())
