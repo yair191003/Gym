@@ -163,11 +163,41 @@
     <Compile Include="FormAddTypes.Designer.cs">
       <DependentUpon>FormAddTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChartRoomsByTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChartRoomsByTool.Designer.cs">
+      <DependentUpon>FormChartRoomsByTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChartSubscribersByAge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChartSubscribersByAge.Designer.cs">
+      <DependentUpon>FormChartSubscribersByAge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChartSubscribersInCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChartSubscribersInCity.Designer.cs">
+      <DependentUpon>FormChartSubscribersInCity.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormChartToolsInRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormChartToolsInRoom.Designer.cs">
       <DependentUpon>FormChartToolsInRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChartTrainsBySubscribes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChartTrainsBySubscribes.Designer.cs">
+      <DependentUpon>FormChartTrainsBySubscribes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChartTrainsByType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChartTrainsByType.Designer.cs">
+      <DependentUpon>FormChartTrainsByType.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -363,8 +393,23 @@
     <EmbeddedResource Include="FormAddTypes.resx">
       <DependentUpon>FormAddTypes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormChartRoomsByTool.resx">
+      <DependentUpon>FormChartRoomsByTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChartSubscribersByAge.resx">
+      <DependentUpon>FormChartSubscribersByAge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChartSubscribersInCity.resx">
+      <DependentUpon>FormChartSubscribersInCity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChartToolsInRoom.resx">
       <DependentUpon>FormChartToolsInRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChartTrainsBySubscribes.resx">
+      <DependentUpon>FormChartTrainsBySubscribes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChartTrainsByType.resx">
+      <DependentUpon>FormChartTrainsByType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

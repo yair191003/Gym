@@ -70,6 +70,11 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.תרשימיםToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chart1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subscrInCityChartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FormChartSubscribersByAgeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FormChartRoomsByToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FormChartTrainsBySubscribesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FormChartTrainsByTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -398,7 +403,12 @@
             // תרשימיםToolStripMenuItem
             // 
             this.תרשימיםToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chart1ToolStripMenuItem});
+            this.chart1ToolStripMenuItem,
+            this.subscrInCityChartToolStripMenuItem,
+            this.FormChartSubscribersByAgeToolStripMenuItem,
+            this.FormChartRoomsByToolToolStripMenuItem,
+            this.FormChartTrainsBySubscribesToolStripMenuItem,
+            this.FormChartTrainsByTypeToolStripMenuItem});
             this.תרשימיםToolStripMenuItem.Name = "תרשימיםToolStripMenuItem";
             this.תרשימיםToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.תרשימיםToolStripMenuItem.Text = "&תרשימים";
@@ -406,9 +416,44 @@
             // chart1ToolStripMenuItem
             // 
             this.chart1ToolStripMenuItem.Name = "chart1ToolStripMenuItem";
-            this.chart1ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.chart1ToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.chart1ToolStripMenuItem.Text = "&תרשים מכשירים בחדר";
             this.chart1ToolStripMenuItem.Click += new System.EventHandler(this.chart1ToolStripMenuItem_Click);
+            // 
+            // subscrInCityChartToolStripMenuItem
+            // 
+            this.subscrInCityChartToolStripMenuItem.Name = "subscrInCityChartToolStripMenuItem";
+            this.subscrInCityChartToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.subscrInCityChartToolStripMenuItem.Text = "&תרשים מנויים בעיר";
+            this.subscrInCityChartToolStripMenuItem.Click += new System.EventHandler(this.subscrInCityChartToolStripMenuItem_Click);
+            // 
+            // FormChartSubscribersByAgeToolStripMenuItem
+            // 
+            this.FormChartSubscribersByAgeToolStripMenuItem.Name = "FormChartSubscribersByAgeToolStripMenuItem";
+            this.FormChartSubscribersByAgeToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.FormChartSubscribersByAgeToolStripMenuItem.Text = "&תרשים מנויים על פי תחום גילים";
+            this.FormChartSubscribersByAgeToolStripMenuItem.Click += new System.EventHandler(this.FormChartSubscribersByAgeToolStripMenuItem_Click);
+            // 
+            // FormChartRoomsByToolToolStripMenuItem
+            // 
+            this.FormChartRoomsByToolToolStripMenuItem.Name = "FormChartRoomsByToolToolStripMenuItem";
+            this.FormChartRoomsByToolToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.FormChartRoomsByToolToolStripMenuItem.Text = "&תרשים חדרים לפי מכשיר";
+            this.FormChartRoomsByToolToolStripMenuItem.Click += new System.EventHandler(this.FormChartRoomsByToolToolStripMenuItem_Click);
+            // 
+            // FormChartTrainsBySubscribesToolStripMenuItem
+            // 
+            this.FormChartTrainsBySubscribesToolStripMenuItem.Name = "FormChartTrainsBySubscribesToolStripMenuItem";
+            this.FormChartTrainsBySubscribesToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.FormChartTrainsBySubscribesToolStripMenuItem.Text = "&תרשים אימונים למנוי";
+            this.FormChartTrainsBySubscribesToolStripMenuItem.Click += new System.EventHandler(this.FormChartTrainsBySubscribesToolStripMenuItem_Click);
+            // 
+            // FormChartTrainsByTypeToolStripMenuItem
+            // 
+            this.FormChartTrainsByTypeToolStripMenuItem.Name = "FormChartTrainsByTypeToolStripMenuItem";
+            this.FormChartTrainsByTypeToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.FormChartTrainsByTypeToolStripMenuItem.Text = "&תרשים אימונים לסוג אימון";
+            this.FormChartTrainsByTypeToolStripMenuItem.Click += new System.EventHandler(this.FormChartTrainsByTypeToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
@@ -471,6 +516,11 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem תרשימיםToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chart1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subscrInCityChartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FormChartSubscribersByAgeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FormChartRoomsByToolToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FormChartTrainsBySubscribesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FormChartTrainsByTypeToolStripMenuItem;
 
     }
 }

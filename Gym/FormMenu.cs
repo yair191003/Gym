@@ -324,5 +324,45 @@ namespace Gym
             frm.Disposed += new EventHandler(Form_Disposed); 
         }
 
+        private void subscrInCityChartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormChartSubscribersInCity frm = new FormChartSubscribersInCity(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
+        private void FormChartSubscribersByAgeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormChartSubscribersByAge frm = new FormChartSubscribersByAge(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
+        private void FormChartRoomsByToolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormChartRoomsByTool frm = new FormChartRoomsByTool(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
+        private void FormChartTrainsBySubscribesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormChartTrainsBySubscribes frm = new FormChartTrainsBySubscribes(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
+        private void FormChartTrainsByTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormChartTrainsByType frm = new FormChartTrainsByType(dataConnection);
+            frm.Show();
+            frm.Disposed += new EventHandler(Form_Disposed); 
+        }
+
     }
 }
