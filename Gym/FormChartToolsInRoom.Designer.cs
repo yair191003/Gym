@@ -51,7 +51,7 @@
             series1.Legend = "Legend1";
             series1.Name = "כמות המכשירים בחדר";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(644, 554);
+            this.chart1.Size = new System.Drawing.Size(799, 554);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -60,11 +60,11 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listView1.Location = new System.Drawing.Point(719, 95);
+            this.listView1.Location = new System.Drawing.Point(817, 95);
             this.listView1.Name = "listView1";
             this.listView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.listView1.RightToLeftLayout = true;
-            this.listView1.Size = new System.Drawing.Size(453, 359);
+            this.listView1.Size = new System.Drawing.Size(355, 554);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;

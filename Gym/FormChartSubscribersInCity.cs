@@ -27,6 +27,7 @@ namespace Gym
             FillArrCities();
             FillArrSubscrInCity();
             ShowChart();
+            EditListView();
         }
         private void CountCities()
         {
@@ -129,6 +130,24 @@ namespace Gym
                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        private void EditListView()
+        {
+            try
+            {
+                for (int i = 0; i < arrCities.Length; i++)
+                {
+                    string[] arr = new string[2];
+                    arr[0] = arrCities[i];
+                    arr[1] = arrSubscrInCity[i].ToString();
+                    ListViewItem item = new ListViewItem(arr);
+                    listView1.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Edit listview item failed " + ex.Message, "Errors",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

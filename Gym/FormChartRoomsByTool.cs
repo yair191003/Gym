@@ -27,6 +27,7 @@ namespace Gym
             FillArrTools();
             FillArrRoomsByTool();
             ShowChart();
+            EditListView();
         }
         private void CountTools()
         {
@@ -126,6 +127,25 @@ namespace Gym
                 MessageBox.Show("Show chart failed " +
                                  ex.Message, "Errors",
                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void EditListView()
+        {
+            try
+            {
+                for (int i = 0; i < arrTools.Length; i++)
+                {
+                    string[] arr = new string[2];
+                    arr[0] = arrTools[i];
+                    arr[1] = arrRoomsByTool[i].ToString();
+                    ListViewItem item = new ListViewItem(arr);
+                    listView1.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Edit listview item failed " + ex.Message, "Errors",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

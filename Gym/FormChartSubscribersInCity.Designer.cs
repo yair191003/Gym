@@ -33,6 +33,9 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +51,7 @@
             series1.Legend = "Legend1";
             series1.Name = "כמות מנויים בעיר";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1160, 587);
+            this.chart1.Size = new System.Drawing.Size(771, 587);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -62,11 +65,36 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "תרשים מנויים בעיר";
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView1.Location = new System.Drawing.Point(789, 62);
+            this.listView1.Name = "listView1";
+            this.listView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.listView1.RightToLeftLayout = true;
+            this.listView1.Size = new System.Drawing.Size(383, 587);
+            this.listView1.TabIndex = 2;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "עיר";
+            this.columnHeader1.Width = 91;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "כמות מנויים בעיר";
+            this.columnHeader2.Width = 128;
+            // 
             // FormChartSubscribersInCity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chart1);
             this.Name = "FormChartSubscribersInCity";
@@ -81,5 +109,8 @@
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
     }
 }

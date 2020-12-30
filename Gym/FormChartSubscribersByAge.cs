@@ -28,6 +28,7 @@ namespace Gym
             FillArrAges();
             FillarrSubscrByAge();
             ShowChart();
+            EditListView();
         }
         private void FillArrAges()
         {
@@ -103,6 +104,25 @@ namespace Gym
                 MessageBox.Show("Show chart failed " +
                                  ex.Message, "Errors",
                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void EditListView()
+        {
+            try
+            {
+                for (int i = 0; i < arrAges.Length; i++)
+                {
+                    string[] arr = new string[2];
+                    arr[0] = arrAges[i].ToString();
+                    arr[1] = (arrSubscrByAge[i]/10).ToString();
+                    ListViewItem item = new ListViewItem(arr);
+                    listView1.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Edit listview item failed " + ex.Message, "Errors",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

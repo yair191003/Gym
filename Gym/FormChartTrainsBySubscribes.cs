@@ -27,6 +27,7 @@ namespace Gym
             FillArrSubscrID();
             FillArrTirSubscr();
             ShowChart();
+            EditListView();
         }
         private void CountSubscrID()
         {
@@ -127,6 +128,25 @@ namespace Gym
                 MessageBox.Show("Show chart failed " +
                                  ex.Message, "Errors",
                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void EditListView()
+        {
+            try
+            {
+                for (int i = 0; i < arrSubscrID.Length; i++)
+                {
+                    string[] arr = new string[2];
+                    arr[0] = arrSubscrID[i].ToString();
+                    arr[1] = arrTirSubscr[i].ToString();
+                    ListViewItem item = new ListViewItem(arr);
+                    listView1.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Edit listview item failed " + ex.Message, "Errors",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
