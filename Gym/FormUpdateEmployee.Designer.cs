@@ -77,6 +77,7 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.tblEmployeesTableAdapter = new Gym.DataSetEmployeesTableAdapters.tblEmployeesTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEmployeesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetEmployees)).BeginInit();
@@ -101,7 +102,7 @@
             this.EmployPassword.Name = "EmployPassword";
             this.EmployPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployPassword.Size = new System.Drawing.Size(100, 20);
-            this.EmployPassword.TabIndex = 81;
+            this.EmployPassword.TabIndex = 10;
             // 
             // EmployMail
             // 
@@ -110,7 +111,7 @@
             this.EmployMail.Name = "EmployMail";
             this.EmployMail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployMail.Size = new System.Drawing.Size(100, 20);
-            this.EmployMail.TabIndex = 80;
+            this.EmployMail.TabIndex = 9;
             // 
             // label11
             // 
@@ -130,7 +131,7 @@
             this.EmployBirthDate.Name = "EmployBirthDate";
             this.EmployBirthDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployBirthDate.Size = new System.Drawing.Size(200, 20);
-            this.EmployBirthDate.TabIndex = 78;
+            this.EmployBirthDate.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -251,7 +252,7 @@
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonBrowse.Size = new System.Drawing.Size(56, 19);
-            this.buttonBrowse.TabIndex = 76;
+            this.buttonBrowse.TabIndex = 13;
             this.buttonBrowse.Text = ". . .עיון";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click_1);
@@ -263,7 +264,7 @@
             this.pictureLocation.Name = "pictureLocation";
             this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
-            this.pictureLocation.TabIndex = 75;
+            this.pictureLocation.TabIndex = 12;
             // 
             // label10
             // 
@@ -294,7 +295,7 @@
             this.mobile.Name = "mobile";
             this.mobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mobile.Size = new System.Drawing.Size(100, 20);
-            this.mobile.TabIndex = 72;
+            this.mobile.TabIndex = 8;
             // 
             // phone
             // 
@@ -303,7 +304,7 @@
             this.phone.Name = "phone";
             this.phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.phone.Size = new System.Drawing.Size(100, 20);
-            this.phone.TabIndex = 71;
+            this.phone.TabIndex = 7;
             // 
             // isManeger
             // 
@@ -314,7 +315,7 @@
             this.isManeger.Name = "isManeger";
             this.isManeger.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.isManeger.Size = new System.Drawing.Size(58, 17);
-            this.isManeger.TabIndex = 70;
+            this.isManeger.TabIndex = 11;
             this.isManeger.Text = "?מנהל";
             this.isManeger.UseVisualStyleBackColor = true;
             // 
@@ -348,7 +349,7 @@
             this.comboCity.Name = "comboCity";
             this.comboCity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboCity.Size = new System.Drawing.Size(91, 21);
-            this.comboCity.TabIndex = 55;
+            this.comboCity.TabIndex = 6;
             // 
             // label7
             // 
@@ -368,7 +369,7 @@
             this.EmployAddress.Name = "EmployAddress";
             this.EmployAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployAddress.Size = new System.Drawing.Size(135, 20);
-            this.EmployAddress.TabIndex = 63;
+            this.EmployAddress.TabIndex = 5;
             // 
             // label6
             // 
@@ -399,7 +400,7 @@
             this.EmployLastName.Name = "EmployLastName";
             this.EmployLastName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployLastName.Size = new System.Drawing.Size(100, 20);
-            this.EmployLastName.TabIndex = 61;
+            this.EmployLastName.TabIndex = 3;
             // 
             // label4
             // 
@@ -419,7 +420,7 @@
             this.EmployFirstName.Name = "EmployFirstName";
             this.EmployFirstName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployFirstName.Size = new System.Drawing.Size(100, 20);
-            this.EmployFirstName.TabIndex = 59;
+            this.EmployFirstName.TabIndex = 2;
             // 
             // label3
             // 
@@ -440,7 +441,7 @@
             this.EmployId.Name = "EmployId";
             this.EmployId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployId.Size = new System.Drawing.Size(100, 20);
-            this.EmployId.TabIndex = 57;
+            this.EmployId.TabIndex = 1;
             // 
             // label2
             // 
@@ -471,7 +472,7 @@
             this.buttonFirst.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(60, 33);
-            this.buttonFirst.TabIndex = 87;
+            this.buttonFirst.TabIndex = 14;
             this.buttonFirst.Text = "ראשון";
             this.buttonFirst.UseVisualStyleBackColor = true;
             this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
@@ -482,7 +483,7 @@
             this.buttonLast.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLast.Name = "buttonLast";
             this.buttonLast.Size = new System.Drawing.Size(61, 33);
-            this.buttonLast.TabIndex = 86;
+            this.buttonLast.TabIndex = 16;
             this.buttonLast.Text = "אחרון";
             this.buttonLast.UseVisualStyleBackColor = true;
             this.buttonLast.Click += new System.EventHandler(this.buttonLast_Click);
@@ -494,7 +495,7 @@
             this.buttonNext.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(62, 33);
-            this.buttonNext.TabIndex = 85;
+            this.buttonNext.TabIndex = 15;
             this.buttonNext.Text = "הבא";
             this.buttonNext.UseVisualStyleBackColor = true;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
@@ -506,7 +507,7 @@
             this.buttonPrev.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPrev.Name = "buttonPrev";
             this.buttonPrev.Size = new System.Drawing.Size(62, 33);
-            this.buttonPrev.TabIndex = 84;
+            this.buttonPrev.TabIndex = 17;
             this.buttonPrev.Text = "הקודם";
             this.buttonPrev.UseVisualStyleBackColor = true;
             this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
@@ -517,7 +518,7 @@
             this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(82, 42);
-            this.buttonUpdate.TabIndex = 83;
+            this.buttonUpdate.TabIndex = 18;
             this.buttonUpdate.Text = "עדכן";
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -530,11 +531,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(1091, 312);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(86, 16);
+            this.label13.TabIndex = 88;
+            this.label13.Text = "טבלת עובדים";
+            // 
             // FormUpdateEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.buttonFirst);
             this.Controls.Add(this.buttonLast);
             this.Controls.Add(this.buttonNext);
@@ -629,5 +642,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn employIsAdminDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn employPictureDataGridViewTextBoxColumn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label13;
     }
 }

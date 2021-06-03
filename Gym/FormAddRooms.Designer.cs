@@ -47,6 +47,7 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.tblRoomsTableAdapter = new Gym.DataSetRoomsTableAdapters.tblRoomsTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetRooms)).BeginInit();
@@ -87,7 +88,7 @@
             this.roomID.Name = "roomID";
             this.roomID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.roomID.Size = new System.Drawing.Size(232, 20);
-            this.roomID.TabIndex = 3;
+            this.roomID.TabIndex = 1;
             // 
             // roomName
             // 
@@ -95,7 +96,7 @@
             this.roomName.Name = "roomName";
             this.roomName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.roomName.Size = new System.Drawing.Size(232, 20);
-            this.roomName.TabIndex = 4;
+            this.roomName.TabIndex = 2;
             // 
             // dataGridView1
             // 
@@ -109,10 +110,10 @@
             this.roomNameDataGridViewTextBoxColumn,
             this.roomPictureDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblRoomsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 352);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 329);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1.Size = new System.Drawing.Size(1160, 297);
+            this.dataGridView1.Size = new System.Drawing.Size(1160, 320);
             this.dataGridView1.TabIndex = 5;
             // 
             // roomIDDataGridViewTextBoxColumn
@@ -161,7 +162,7 @@
             this.buttonBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(56, 19);
-            this.buttonBrowse.TabIndex = 52;
+            this.buttonBrowse.TabIndex = 4;
             this.buttonBrowse.Text = ". . .עיון";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -173,7 +174,7 @@
             this.pictureLocation.Name = "pictureLocation";
             this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
-            this.pictureLocation.TabIndex = 51;
+            this.pictureLocation.TabIndex = 3;
             // 
             // label10
             // 
@@ -192,7 +193,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(489, 246);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(80, 34);
-            this.buttonAdd.TabIndex = 49;
+            this.buttonAdd.TabIndex = 5;
             this.buttonAdd.Text = "הוסף";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -205,11 +206,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1092, 310);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 16);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "טבלת חדרים";
+            // 
             // FormAddRooms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonBrowse);
             this.Controls.Add(this.pictureLocation);
             this.Controls.Add(this.label10);
@@ -253,5 +266,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn roomNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roomPictureDataGridViewTextBoxColumn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label4;
     }
 }

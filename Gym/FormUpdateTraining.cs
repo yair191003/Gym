@@ -60,8 +60,8 @@ namespace Gym
             {
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
-                string sqlCommand = "SELECT   * " +
-                                     "FROM     tblTraining " +
+                string sqlCommand = "SELECT * " +
+                                     " FROM     tblTraining " +
                                      "ORDER BY trainSubscrID, trainDate, trainHour";
                 OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sqlCommand, dataConnection);
                 DataTable tbl = new DataTable();

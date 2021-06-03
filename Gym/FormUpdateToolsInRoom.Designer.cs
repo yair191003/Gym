@@ -48,6 +48,7 @@
             this.tblToolsInRoomTableAdapter = new Gym.DataSetToolsInRoomTableAdapters.tblToolsInRoomTableAdapter();
             this.tirToolName = new System.Windows.Forms.TextBox();
             this.tirRoomID = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToolsInRoomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetToolsInRoom)).BeginInit();
@@ -104,7 +105,7 @@
             this.tirRoomAmount.Name = "tirRoomAmount";
             this.tirRoomAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tirRoomAmount.Size = new System.Drawing.Size(236, 20);
-            this.tirRoomAmount.TabIndex = 73;
+            this.tirRoomAmount.TabIndex = 3;
             // 
             // label4
             // 
@@ -149,7 +150,7 @@
             this.buttonFirst.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(60, 33);
-            this.buttonFirst.TabIndex = 92;
+            this.buttonFirst.TabIndex = 4;
             this.buttonFirst.Text = "ראשון";
             this.buttonFirst.UseVisualStyleBackColor = true;
             this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
@@ -160,7 +161,7 @@
             this.buttonLast.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLast.Name = "buttonLast";
             this.buttonLast.Size = new System.Drawing.Size(61, 33);
-            this.buttonLast.TabIndex = 91;
+            this.buttonLast.TabIndex = 6;
             this.buttonLast.Text = "אחרון";
             this.buttonLast.UseVisualStyleBackColor = true;
             this.buttonLast.Click += new System.EventHandler(this.buttonLast_Click);
@@ -172,7 +173,7 @@
             this.buttonNext.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(62, 33);
-            this.buttonNext.TabIndex = 90;
+            this.buttonNext.TabIndex = 5;
             this.buttonNext.Text = "הבא";
             this.buttonNext.UseVisualStyleBackColor = true;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
@@ -184,7 +185,7 @@
             this.buttonPrev.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPrev.Name = "buttonPrev";
             this.buttonPrev.Size = new System.Drawing.Size(62, 33);
-            this.buttonPrev.TabIndex = 89;
+            this.buttonPrev.TabIndex = 7;
             this.buttonPrev.Text = "הקודם";
             this.buttonPrev.UseVisualStyleBackColor = true;
             this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
@@ -195,7 +196,7 @@
             this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(82, 42);
-            this.buttonUpdate.TabIndex = 88;
+            this.buttonUpdate.TabIndex = 8;
             this.buttonUpdate.Text = "עדכן";
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -211,7 +212,7 @@
             this.tirToolName.Name = "tirToolName";
             this.tirToolName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tirToolName.Size = new System.Drawing.Size(236, 20);
-            this.tirToolName.TabIndex = 93;
+            this.tirToolName.TabIndex = 2;
             // 
             // tirRoomID
             // 
@@ -220,13 +221,25 @@
             this.tirRoomID.Name = "tirRoomID";
             this.tirRoomID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tirRoomID.Size = new System.Drawing.Size(236, 20);
-            this.tirRoomID.TabIndex = 94;
+            this.tirRoomID.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1045, 304);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(127, 16);
+            this.label5.TabIndex = 95;
+            this.label5.Text = "טבלת מכשירים בחדר";
             // 
             // FormUpdateToolsInRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.tirRoomID);
             this.Controls.Add(this.tirToolName);
             this.Controls.Add(this.buttonFirst);
@@ -272,5 +285,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tirRoomAmountDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox tirToolName;
         private System.Windows.Forms.TextBox tirRoomID;
+        private System.Windows.Forms.Label label5;
     }
 }

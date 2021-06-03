@@ -33,14 +33,14 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonColor = new System.Windows.Forms.Button();
             this.buttonShow = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboType = new System.Windows.Forms.ComboBox();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
@@ -64,22 +64,32 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "סוג אימון";
-            this.columnHeader1.Width = 82;
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "ת\"ז מנוי";
-            this.columnHeader2.Width = 95;
+            this.columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "תאריך";
-            this.columnHeader3.Width = 96;
+            this.columnHeader3.Width = 100;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "שעה";
             this.columnHeader4.Width = 100;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "חדר";
+            this.columnHeader5.Width = 100;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "מכשיר";
+            this.columnHeader6.Width = 100;
             // 
             // label3
             // 
@@ -98,7 +108,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 41);
-            this.button1.TabIndex = 135;
+            this.button1.TabIndex = 4;
             this.button1.Text = "ניקוי";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -110,7 +120,7 @@
             this.buttonColor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonColor.Name = "buttonColor";
             this.buttonColor.Size = new System.Drawing.Size(116, 41);
-            this.buttonColor.TabIndex = 134;
+            this.buttonColor.TabIndex = 2;
             this.buttonColor.Text = "בחר צבע";
             this.buttonColor.UseVisualStyleBackColor = true;
             this.buttonColor.Click += new System.EventHandler(this.buttonColor_Click);
@@ -122,7 +132,7 @@
             this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(116, 41);
-            this.buttonShow.TabIndex = 133;
+            this.buttonShow.TabIndex = 3;
             this.buttonShow.Text = "הצג";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
@@ -145,20 +155,13 @@
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(246, 21);
             this.comboType.Sorted = true;
-            this.comboType.TabIndex = 131;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "חדר";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "מכשיר";
+            this.comboType.TabIndex = 1;
             // 
             // FormRptSubscribersByType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label3);

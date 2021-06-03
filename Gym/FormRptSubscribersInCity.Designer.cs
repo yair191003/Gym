@@ -74,7 +74,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 41);
-            this.button1.TabIndex = 121;
+            this.button1.TabIndex = 4;
             this.button1.Text = "ניקוי";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -86,7 +86,7 @@
             this.buttonColor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonColor.Name = "buttonColor";
             this.buttonColor.Size = new System.Drawing.Size(116, 41);
-            this.buttonColor.TabIndex = 120;
+            this.buttonColor.TabIndex = 2;
             this.buttonColor.Text = "בחר צבע";
             this.buttonColor.UseVisualStyleBackColor = true;
             this.buttonColor.Click += new System.EventHandler(this.buttonColor_Click);
@@ -98,7 +98,7 @@
             this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(116, 41);
-            this.buttonShow.TabIndex = 119;
+            this.buttonShow.TabIndex = 3;
             this.buttonShow.Text = "הצג";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
@@ -138,51 +138,58 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "עיר";
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "ת\"ז";
+            this.columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "שם פרטי";
+            this.columnHeader3.Width = 100;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "שם משפחה";
-            this.columnHeader4.Width = 79;
+            this.columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "תאריך לידה";
-            this.columnHeader5.Width = 84;
+            this.columnHeader5.Width = 100;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "כתובת";
+            this.columnHeader6.Width = 100;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "טלפון בית";
-            this.columnHeader7.Width = 78;
+            this.columnHeader7.Width = 100;
             // 
             // columnHeader8
             // 
             this.columnHeader8.Text = "טלפון נייד";
-            this.columnHeader8.Width = 84;
+            this.columnHeader8.Width = 100;
             // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "אימייל";
+            this.columnHeader9.Width = 100;
             // 
             // columnHeader10
             // 
             this.columnHeader10.Text = "תמונה";
+            this.columnHeader10.Width = 100;
             // 
             // FormRptSubscribersInCity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label3);

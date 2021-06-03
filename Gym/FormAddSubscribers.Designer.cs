@@ -68,6 +68,7 @@
             this.dataSetSubscribers = new Gym.DataSetSubscribers();
             this.tblSubscribersTableAdapter = new Gym.DataSetSubscribersTableAdapters.tblSubscribersTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSubscribersBindingSource)).BeginInit();
@@ -103,7 +104,7 @@
             this.subscrId.Name = "subscrId";
             this.subscrId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrId.Size = new System.Drawing.Size(100, 20);
-            this.subscrId.TabIndex = 57;
+            this.subscrId.TabIndex = 1;
             // 
             // label3
             // 
@@ -123,7 +124,7 @@
             this.subscrFirstName.Name = "subscrFirstName";
             this.subscrFirstName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrFirstName.Size = new System.Drawing.Size(100, 20);
-            this.subscrFirstName.TabIndex = 59;
+            this.subscrFirstName.TabIndex = 2;
             // 
             // label4
             // 
@@ -143,7 +144,7 @@
             this.subscrLastName.Name = "subscrLastName";
             this.subscrLastName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrLastName.Size = new System.Drawing.Size(100, 20);
-            this.subscrLastName.TabIndex = 61;
+            this.subscrLastName.TabIndex = 3;
             // 
             // label5
             // 
@@ -174,7 +175,7 @@
             this.subscrAddress.Name = "subscrAddress";
             this.subscrAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrAddress.Size = new System.Drawing.Size(135, 20);
-            this.subscrAddress.TabIndex = 63;
+            this.subscrAddress.TabIndex = 5;
             // 
             // label7
             // 
@@ -193,7 +194,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(536, 277);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(80, 34);
-            this.buttonAdd.TabIndex = 65;
+            this.buttonAdd.TabIndex = 12;
             this.buttonAdd.Text = "הוסף";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -206,7 +207,7 @@
             this.comboCity.Name = "comboCity";
             this.comboCity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboCity.Size = new System.Drawing.Size(91, 21);
-            this.comboCity.TabIndex = 55;
+            this.comboCity.TabIndex = 6;
             // 
             // label8
             // 
@@ -237,7 +238,7 @@
             this.phone.Name = "phone";
             this.phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.phone.Size = new System.Drawing.Size(100, 20);
-            this.phone.TabIndex = 71;
+            this.phone.TabIndex = 7;
             // 
             // mobile
             // 
@@ -246,7 +247,7 @@
             this.mobile.Name = "mobile";
             this.mobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mobile.Size = new System.Drawing.Size(100, 20);
-            this.mobile.TabIndex = 72;
+            this.mobile.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -276,7 +277,7 @@
             this.pictureLocation.Name = "pictureLocation";
             this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
-            this.pictureLocation.TabIndex = 75;
+            this.pictureLocation.TabIndex = 10;
             // 
             // buttonBrowse
             // 
@@ -286,7 +287,7 @@
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonBrowse.Size = new System.Drawing.Size(56, 19);
-            this.buttonBrowse.TabIndex = 76;
+            this.buttonBrowse.TabIndex = 11;
             this.buttonBrowse.Text = ". . .עיון";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -298,7 +299,7 @@
             this.subscrBirthDate.Name = "subscrBirthDate";
             this.subscrBirthDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrBirthDate.Size = new System.Drawing.Size(200, 20);
-            this.subscrBirthDate.TabIndex = 77;
+            this.subscrBirthDate.TabIndex = 4;
             // 
             // label11
             // 
@@ -317,7 +318,7 @@
             this.subscrMail.Name = "subscrMail";
             this.subscrMail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscrMail.Size = new System.Drawing.Size(100, 20);
-            this.subscrMail.TabIndex = 79;
+            this.subscrMail.TabIndex = 9;
             // 
             // dataGridView1
             // 
@@ -325,6 +326,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.subscrIDDataGridViewTextBoxColumn,
@@ -423,11 +425,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(1091, 298);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(80, 16);
+            this.label12.TabIndex = 81;
+            this.label12.Text = "טבלת מנויים";
+            // 
             // FormAddSubscribers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.subscrMail);
             this.Controls.Add(this.label11);
@@ -506,5 +520,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn subscrMailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn subscrPictureDataGridViewTextBoxColumn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label12;
     }
 }

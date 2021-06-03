@@ -76,12 +76,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "ת\"ז";
-            this.columnHeader1.Width = 49;
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "שם פרטי";
-            this.columnHeader2.Width = 76;
+            this.columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
@@ -91,7 +91,7 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "תאריך לידה";
-            this.columnHeader4.Width = 94;
+            this.columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
@@ -101,12 +101,12 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "עיר";
-            this.columnHeader6.Width = 80;
+            this.columnHeader6.Width = 100;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "טלפון בית";
-            this.columnHeader7.Width = 90;
+            this.columnHeader7.Width = 100;
             // 
             // columnHeader8
             // 
@@ -116,16 +116,17 @@
             // columnHeader9
             // 
             this.columnHeader9.Text = "אימייל";
-            this.columnHeader9.Width = 99;
+            this.columnHeader9.Width = 100;
             // 
             // columnHeader10
             // 
             this.columnHeader10.Text = "תמונה";
-            this.columnHeader10.Width = 94;
+            this.columnHeader10.Width = 100;
             // 
             // columnHeader11
             // 
             this.columnHeader11.Text = "גיל";
+            this.columnHeader11.Width = 100;
             // 
             // label3
             // 
@@ -144,7 +145,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 41);
-            this.button1.TabIndex = 128;
+            this.button1.TabIndex = 5;
             this.button1.Text = "ניקוי";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -156,7 +157,7 @@
             this.buttonColor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonColor.Name = "buttonColor";
             this.buttonColor.Size = new System.Drawing.Size(116, 41);
-            this.buttonColor.TabIndex = 127;
+            this.buttonColor.TabIndex = 3;
             this.buttonColor.Text = "בחר צבע";
             this.buttonColor.UseVisualStyleBackColor = true;
             this.buttonColor.Click += new System.EventHandler(this.buttonColor_Click);
@@ -168,7 +169,7 @@
             this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(116, 41);
-            this.buttonShow.TabIndex = 126;
+            this.buttonShow.TabIndex = 4;
             this.buttonShow.Text = "הצג";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
@@ -196,7 +197,7 @@
             this.fromAge.Location = new System.Drawing.Point(622, 103);
             this.fromAge.Name = "fromAge";
             this.fromAge.Size = new System.Drawing.Size(195, 20);
-            this.fromAge.TabIndex = 133;
+            this.fromAge.TabIndex = 1;
             this.fromAge.TextChanged += new System.EventHandler(this.fromAge_TextChanged);
             // 
             // toAge
@@ -204,12 +205,13 @@
             this.toAge.Location = new System.Drawing.Point(328, 103);
             this.toAge.Name = "toAge";
             this.toAge.Size = new System.Drawing.Size(195, 20);
-            this.toAge.TabIndex = 134;
+            this.toAge.TabIndex = 2;
             // 
             // FormRptSbscribersByAge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.toAge);
             this.Controls.Add(this.fromAge);

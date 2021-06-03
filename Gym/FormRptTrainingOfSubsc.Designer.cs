@@ -58,6 +58,7 @@
             this.tblSubscribersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetSubscribers = new Gym.DataSetSubscribers();
             this.tblSubscribersTableAdapter = new Gym.DataSetSubscribersTableAdapters.tblSubscribersTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSubscribersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetSubscribers)).BeginInit();
@@ -70,7 +71,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 41);
-            this.button1.TabIndex = 128;
+            this.button1.TabIndex = 7;
             this.button1.Text = "ניקוי";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -82,7 +83,7 @@
             this.buttonColor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonColor.Name = "buttonColor";
             this.buttonColor.Size = new System.Drawing.Size(116, 41);
-            this.buttonColor.TabIndex = 127;
+            this.buttonColor.TabIndex = 5;
             this.buttonColor.Text = "בחר צבע";
             this.buttonColor.UseVisualStyleBackColor = true;
             this.buttonColor.Click += new System.EventHandler(this.buttonColor_Click);
@@ -94,7 +95,7 @@
             this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(116, 41);
-            this.buttonShow.TabIndex = 126;
+            this.buttonShow.TabIndex = 6;
             this.buttonShow.Text = "הצג";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
@@ -125,12 +126,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "ת\"ז מנוי";
-            this.columnHeader1.Width = 88;
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "תאריך ";
-            this.columnHeader2.Width = 98;
+            this.columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
@@ -140,11 +141,12 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "סוג אימון";
-            this.columnHeader4.Width = 93;
+            this.columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "חדר";
+            this.columnHeader5.Width = 100;
             // 
             // columnHeader6
             // 
@@ -158,7 +160,7 @@
             this.buttonFirst.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(60, 33);
-            this.buttonFirst.TabIndex = 124;
+            this.buttonFirst.TabIndex = 1;
             this.buttonFirst.Text = "ראשון";
             this.buttonFirst.UseVisualStyleBackColor = true;
             this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click_1);
@@ -170,7 +172,7 @@
             this.buttonLast.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLast.Name = "buttonLast";
             this.buttonLast.Size = new System.Drawing.Size(61, 33);
-            this.buttonLast.TabIndex = 123;
+            this.buttonLast.TabIndex = 3;
             this.buttonLast.Text = "אחרון";
             this.buttonLast.UseVisualStyleBackColor = true;
             this.buttonLast.Click += new System.EventHandler(this.buttonLast_Click);
@@ -183,7 +185,7 @@
             this.buttonNext.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(62, 33);
-            this.buttonNext.TabIndex = 122;
+            this.buttonNext.TabIndex = 2;
             this.buttonNext.Text = "הבא";
             this.buttonNext.UseVisualStyleBackColor = true;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
@@ -196,7 +198,7 @@
             this.buttonPrev.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPrev.Name = "buttonPrev";
             this.buttonPrev.Size = new System.Drawing.Size(62, 33);
-            this.buttonPrev.TabIndex = 121;
+            this.buttonPrev.TabIndex = 4;
             this.buttonPrev.Text = "הקודם";
             this.buttonPrev.UseVisualStyleBackColor = true;
             this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
@@ -321,11 +323,23 @@
             // 
             this.tblSubscribersTableAdapter.ClearBeforeFill = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1091, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.TabIndex = 130;
+            this.label3.Text = "טבלת מנויים";
+            // 
             // FormRptTrainingOfSubsc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonColor);
@@ -378,5 +392,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn subscrMobileDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn subscrMailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn subscrPictureDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

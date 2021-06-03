@@ -57,6 +57,7 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.tblTrainingTableAdapter = new Gym.DataSetTrainingTableAdapters.tblTrainingTableAdapter();
             this.trainSubscrID = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblTrainingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetTraining)).BeginInit();
@@ -70,7 +71,7 @@
             this.trainHour.Name = "trainHour";
             this.trainHour.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.trainHour.Size = new System.Drawing.Size(233, 20);
-            this.trainHour.TabIndex = 79;
+            this.trainHour.TabIndex = 3;
             this.trainHour.Value = new System.DateTime(2020, 9, 14, 14, 26, 0, 0);
             // 
             // comboTool
@@ -80,7 +81,7 @@
             this.comboTool.Name = "comboTool";
             this.comboTool.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboTool.Size = new System.Drawing.Size(234, 21);
-            this.comboTool.TabIndex = 86;
+            this.comboTool.TabIndex = 6;
             // 
             // comboType
             // 
@@ -89,7 +90,7 @@
             this.comboType.Name = "comboType";
             this.comboType.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboType.Size = new System.Drawing.Size(234, 21);
-            this.comboType.TabIndex = 85;
+            this.comboType.TabIndex = 4;
             // 
             // comboRoom
             // 
@@ -98,7 +99,7 @@
             this.comboRoom.Name = "comboRoom";
             this.comboRoom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboRoom.Size = new System.Drawing.Size(233, 21);
-            this.comboRoom.TabIndex = 83;
+            this.comboRoom.TabIndex = 5;
             // 
             // label4
             // 
@@ -116,7 +117,7 @@
             this.trainDate.Name = "trainDate";
             this.trainDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.trainDate.Size = new System.Drawing.Size(233, 20);
-            this.trainDate.TabIndex = 80;
+            this.trainDate.TabIndex = 2;
             // 
             // label7
             // 
@@ -247,7 +248,7 @@
             this.buttonFirst.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(60, 33);
-            this.buttonFirst.TabIndex = 92;
+            this.buttonFirst.TabIndex = 7;
             this.buttonFirst.Text = "ראשון";
             this.buttonFirst.UseVisualStyleBackColor = true;
             this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
@@ -258,7 +259,7 @@
             this.buttonLast.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLast.Name = "buttonLast";
             this.buttonLast.Size = new System.Drawing.Size(61, 33);
-            this.buttonLast.TabIndex = 91;
+            this.buttonLast.TabIndex = 9;
             this.buttonLast.Text = "אחרון";
             this.buttonLast.UseVisualStyleBackColor = true;
             this.buttonLast.Click += new System.EventHandler(this.buttonLast_Click);
@@ -270,7 +271,7 @@
             this.buttonNext.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(62, 33);
-            this.buttonNext.TabIndex = 90;
+            this.buttonNext.TabIndex = 8;
             this.buttonNext.Text = "הבא";
             this.buttonNext.UseVisualStyleBackColor = true;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
@@ -282,7 +283,7 @@
             this.buttonPrev.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPrev.Name = "buttonPrev";
             this.buttonPrev.Size = new System.Drawing.Size(62, 33);
-            this.buttonPrev.TabIndex = 89;
+            this.buttonPrev.TabIndex = 10;
             this.buttonPrev.Text = "הקודם";
             this.buttonPrev.UseVisualStyleBackColor = true;
             this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
@@ -293,7 +294,7 @@
             this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(82, 42);
-            this.buttonUpdate.TabIndex = 88;
+            this.buttonUpdate.TabIndex = 11;
             this.buttonUpdate.Text = "עדכן";
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -308,13 +309,25 @@
             this.trainSubscrID.Location = new System.Drawing.Point(631, 94);
             this.trainSubscrID.Name = "trainSubscrID";
             this.trainSubscrID.Size = new System.Drawing.Size(233, 20);
-            this.trainSubscrID.TabIndex = 93;
+            this.trainSubscrID.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1084, 363);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 16);
+            this.label8.TabIndex = 94;
+            this.label8.Text = "טבלת אימונים";
             // 
             // FormUpdateTraining
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.trainSubscrID);
             this.Controls.Add(this.buttonFirst);
             this.Controls.Add(this.buttonLast);
@@ -375,5 +388,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn trainRoomDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn trainToolDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox trainSubscrID;
+        private System.Windows.Forms.Label label8;
     }
 }

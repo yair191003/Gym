@@ -38,6 +38,7 @@
             this.CityName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tblCitiesTableAdapter = new Gym.DataSetCitiesTableAdapters.tblCitiesTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCitiesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCities)).BeginInit();
@@ -100,7 +101,7 @@
             this.CityName.Name = "CityName";
             this.CityName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CityName.Size = new System.Drawing.Size(169, 20);
-            this.CityName.TabIndex = 3;
+            this.CityName.TabIndex = 1;
             // 
             // button1
             // 
@@ -108,7 +109,7 @@
             this.button1.Location = new System.Drawing.Point(526, 195);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 2;
             this.button1.Text = "הוסף";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -117,11 +118,23 @@
             // 
             this.tblCitiesTableAdapter.ClearBeforeFill = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1091, 254);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.TabIndex = 54;
+            this.label3.Text = "טבלת ערים";
+            // 
             // FormAddCities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CityName);
             this.Controls.Add(this.label2);
@@ -149,5 +162,6 @@
         private System.Windows.Forms.BindingSource tblCitiesBindingSource;
         private DataSetCitiesTableAdapters.tblCitiesTableAdapter tblCitiesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn cityNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

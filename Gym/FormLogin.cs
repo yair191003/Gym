@@ -14,6 +14,7 @@ namespace Gym
     public partial class FormLogin : Form
     {
         private OleDbConnection dataConnection;
+        private bool employIsAdmin;
         public FormLogin()
         {
             InitializeComponent();
@@ -58,14 +59,14 @@ namespace Gym
         }
         private void CheckButtonClick(object sender, EventArgs e)
         {
-            String line, password;
+            String line, password,picture;
             int id;
-            bool employIsAdmin;
+           
             try
             {
                 OleDbCommand datacommand = new OleDbCommand();
                 datacommand.Connection = dataConnection;
-                datacommand.CommandText = " SELECT        employID, employPassword,employIsAdmin " +
+                datacommand.CommandText = " SELECT        employID, employPassword,employIsAdmin,employPicture " +
                                            "FROM            tblEmployees " +
                                            "WHERE        employID= " + this.idNumber.Text;
                 OleDbDataReader dataReader = datacommand.ExecuteReader();
@@ -73,12 +74,12 @@ namespace Gym
                 id = dataReader.GetInt32(0);
                 password = dataReader.GetString(1);
                 employIsAdmin = dataReader.GetBoolean(2);
+                picture = dataReader.GetString(3);
                 if (password == this.password.Text)
                 {
-                    this.Hide();
-                    FormMenu frMenu = new FormMenu(dataConnection, employIsAdmin);
-                    frMenu.Show();
-                    frMenu.Disposed += new EventHandler(frMenu_Disposed);
+                    pictureBox1.ImageLocation = picture;
+                    checkButton.Visible = false;
+                    loginContinue.Visible = true;
                 }
                 else
                 {
@@ -98,6 +99,14 @@ namespace Gym
             this.password.Text = "";
             this.Show();
             this.Activate();
+        }
+
+        private void loginContinue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenu frMenu = new FormMenu(dataConnection, employIsAdmin);
+            frMenu.Show();
+            frMenu.Disposed += new EventHandler(frMenu_Disposed);
         }
     }
 }

@@ -61,17 +61,17 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "מכשיר";
-            this.columnHeader1.Width = 82;
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "מספר חדר";
-            this.columnHeader2.Width = 95;
+            this.columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "שם חדר";
-            this.columnHeader3.Width = 96;
+            this.columnHeader3.Width = 100;
             // 
             // columnHeader4
             // 
@@ -95,7 +95,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 41);
-            this.button1.TabIndex = 128;
+            this.button1.TabIndex = 4;
             this.button1.Text = "ניקוי";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -107,7 +107,7 @@
             this.buttonColor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonColor.Name = "buttonColor";
             this.buttonColor.Size = new System.Drawing.Size(116, 41);
-            this.buttonColor.TabIndex = 127;
+            this.buttonColor.TabIndex = 2;
             this.buttonColor.Text = "בחר צבע";
             this.buttonColor.UseVisualStyleBackColor = true;
             this.buttonColor.Click += new System.EventHandler(this.buttonColor_Click);
@@ -119,7 +119,7 @@
             this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(116, 41);
-            this.buttonShow.TabIndex = 126;
+            this.buttonShow.TabIndex = 3;
             this.buttonShow.Text = "הצג";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
@@ -142,12 +142,13 @@
             this.comboTool.Name = "comboTool";
             this.comboTool.Size = new System.Drawing.Size(246, 21);
             this.comboTool.Sorted = true;
-            this.comboTool.TabIndex = 124;
+            this.comboTool.TabIndex = 1;
             // 
             // FormRptRoomsByTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label3);

@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.personalIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personalNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personalTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personalDayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblPersonalsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetPersonals = new Gym.DataSetPersonals();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,16 +46,11 @@
             this.comboID = new System.Windows.Forms.ComboBox();
             this.comboType = new System.Windows.Forms.ComboBox();
             this.comboDay = new System.Windows.Forms.ComboBox();
-            this.dataSetPersonals = new Gym.DataSetPersonals();
-            this.tblPersonalsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblPersonalsTableAdapter = new Gym.DataSetPersonalsTableAdapters.tblPersonalsTableAdapter();
-            this.personalIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalDayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPersonals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonalsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPersonals)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -70,6 +71,40 @@
             this.dataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView2.Size = new System.Drawing.Size(1160, 408);
             this.dataGridView2.TabIndex = 1;
+            // 
+            // personalIDDataGridViewTextBoxColumn
+            // 
+            this.personalIDDataGridViewTextBoxColumn.DataPropertyName = "personalID";
+            this.personalIDDataGridViewTextBoxColumn.HeaderText = "ת\"ז";
+            this.personalIDDataGridViewTextBoxColumn.Name = "personalIDDataGridViewTextBoxColumn";
+            // 
+            // personalNumDataGridViewTextBoxColumn
+            // 
+            this.personalNumDataGridViewTextBoxColumn.DataPropertyName = "personalNum";
+            this.personalNumDataGridViewTextBoxColumn.HeaderText = "מספר סידורי";
+            this.personalNumDataGridViewTextBoxColumn.Name = "personalNumDataGridViewTextBoxColumn";
+            // 
+            // personalTypeDataGridViewTextBoxColumn
+            // 
+            this.personalTypeDataGridViewTextBoxColumn.DataPropertyName = "personalType";
+            this.personalTypeDataGridViewTextBoxColumn.HeaderText = "סוג אימון";
+            this.personalTypeDataGridViewTextBoxColumn.Name = "personalTypeDataGridViewTextBoxColumn";
+            // 
+            // personalDayDataGridViewTextBoxColumn
+            // 
+            this.personalDayDataGridViewTextBoxColumn.DataPropertyName = "personalDay";
+            this.personalDayDataGridViewTextBoxColumn.HeaderText = "יום בשבוע";
+            this.personalDayDataGridViewTextBoxColumn.Name = "personalDayDataGridViewTextBoxColumn";
+            // 
+            // tblPersonalsBindingSource
+            // 
+            this.tblPersonalsBindingSource.DataMember = "tblPersonals";
+            this.tblPersonalsBindingSource.DataSource = this.dataSetPersonals;
+            // 
+            // dataSetPersonals
+            // 
+            this.dataSetPersonals.DataSetName = "DataSetPersonals";
+            this.dataSetPersonals.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -130,7 +165,7 @@
             this.personalNum.Name = "personalNum";
             this.personalNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.personalNum.Size = new System.Drawing.Size(223, 20);
-            this.personalNum.TabIndex = 8;
+            this.personalNum.TabIndex = 2;
             // 
             // button1
             // 
@@ -138,7 +173,7 @@
             this.button1.Location = new System.Drawing.Point(510, 212);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 5;
             this.button1.Text = "הוסף";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -150,7 +185,7 @@
             this.comboID.Name = "comboID";
             this.comboID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboID.Size = new System.Drawing.Size(222, 21);
-            this.comboID.TabIndex = 12;
+            this.comboID.TabIndex = 1;
             // 
             // comboType
             // 
@@ -159,7 +194,7 @@
             this.comboType.Name = "comboType";
             this.comboType.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboType.Size = new System.Drawing.Size(222, 21);
-            this.comboType.TabIndex = 13;
+            this.comboType.TabIndex = 3;
             // 
             // comboDay
             // 
@@ -168,51 +203,29 @@
             this.comboDay.Name = "comboDay";
             this.comboDay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboDay.Size = new System.Drawing.Size(222, 21);
-            this.comboDay.TabIndex = 14;
-            // 
-            // dataSetPersonals
-            // 
-            this.dataSetPersonals.DataSetName = "DataSetPersonals";
-            this.dataSetPersonals.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblPersonalsBindingSource
-            // 
-            this.tblPersonalsBindingSource.DataMember = "tblPersonals";
-            this.tblPersonalsBindingSource.DataSource = this.dataSetPersonals;
+            this.comboDay.TabIndex = 4;
             // 
             // tblPersonalsTableAdapter
             // 
             this.tblPersonalsTableAdapter.ClearBeforeFill = true;
             // 
-            // personalIDDataGridViewTextBoxColumn
+            // label6
             // 
-            this.personalIDDataGridViewTextBoxColumn.DataPropertyName = "personalID";
-            this.personalIDDataGridViewTextBoxColumn.HeaderText = "ת\"ז";
-            this.personalIDDataGridViewTextBoxColumn.Name = "personalIDDataGridViewTextBoxColumn";
-            // 
-            // personalNumDataGridViewTextBoxColumn
-            // 
-            this.personalNumDataGridViewTextBoxColumn.DataPropertyName = "personalNum";
-            this.personalNumDataGridViewTextBoxColumn.HeaderText = "מספר סידורי";
-            this.personalNumDataGridViewTextBoxColumn.Name = "personalNumDataGridViewTextBoxColumn";
-            // 
-            // personalTypeDataGridViewTextBoxColumn
-            // 
-            this.personalTypeDataGridViewTextBoxColumn.DataPropertyName = "personalType";
-            this.personalTypeDataGridViewTextBoxColumn.HeaderText = "סוג אימון";
-            this.personalTypeDataGridViewTextBoxColumn.Name = "personalTypeDataGridViewTextBoxColumn";
-            // 
-            // personalDayDataGridViewTextBoxColumn
-            // 
-            this.personalDayDataGridViewTextBoxColumn.DataPropertyName = "personalDay";
-            this.personalDayDataGridViewTextBoxColumn.HeaderText = "יום בשבוע";
-            this.personalDayDataGridViewTextBoxColumn.Name = "personalDayDataGridViewTextBoxColumn";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(1041, 222);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 16);
+            this.label6.TabIndex = 54;
+            this.label6.Text = "טבלת אימונים אישיים";
             // 
             // FormAddPersonals
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.comboDay);
             this.Controls.Add(this.comboType);
             this.Controls.Add(this.comboID);
@@ -228,8 +241,8 @@
             this.Text = "FormAddPersonals";
             this.Load += new System.EventHandler(this.FormAddPersonals_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPersonals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonalsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPersonals)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,5 +270,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn personalNumDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn personalTypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn personalDayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label6;
     }
 }

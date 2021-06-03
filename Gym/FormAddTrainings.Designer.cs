@@ -53,6 +53,7 @@
             this.comboType = new System.Windows.Forms.ComboBox();
             this.comboTool = new System.Windows.Forms.ComboBox();
             this.trainHour = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblTrainingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetTraining)).BeginInit();
@@ -185,7 +186,7 @@
             this.trainDate.Name = "trainDate";
             this.trainDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.trainDate.Size = new System.Drawing.Size(233, 20);
-            this.trainDate.TabIndex = 9;
+            this.trainDate.TabIndex = 2;
             // 
             // tblTrainingTableAdapter
             // 
@@ -207,7 +208,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(493, 329);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(80, 34);
-            this.buttonAdd.TabIndex = 38;
+            this.buttonAdd.TabIndex = 7;
             this.buttonAdd.Text = "הוסף";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -219,7 +220,7 @@
             this.comboRoom.Name = "comboRoom";
             this.comboRoom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboRoom.Size = new System.Drawing.Size(233, 21);
-            this.comboRoom.TabIndex = 68;
+            this.comboRoom.TabIndex = 5;
             // 
             // comboID
             // 
@@ -228,7 +229,7 @@
             this.comboID.Name = "comboID";
             this.comboID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboID.Size = new System.Drawing.Size(234, 21);
-            this.comboID.TabIndex = 69;
+            this.comboID.TabIndex = 1;
             // 
             // comboType
             // 
@@ -237,7 +238,7 @@
             this.comboType.Name = "comboType";
             this.comboType.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboType.Size = new System.Drawing.Size(234, 21);
-            this.comboType.TabIndex = 70;
+            this.comboType.TabIndex = 4;
             // 
             // comboTool
             // 
@@ -246,7 +247,7 @@
             this.comboTool.Name = "comboTool";
             this.comboTool.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboTool.Size = new System.Drawing.Size(234, 21);
-            this.comboTool.TabIndex = 71;
+            this.comboTool.TabIndex = 6;
             // 
             // trainHour
             // 
@@ -255,14 +256,26 @@
             this.trainHour.Name = "trainHour";
             this.trainHour.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.trainHour.Size = new System.Drawing.Size(233, 20);
-            this.trainHour.TabIndex = 9;
+            this.trainHour.TabIndex = 3;
             this.trainHour.Value = new System.DateTime(2020, 9, 14, 14, 26, 0, 0);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1091, 362);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 16);
+            this.label8.TabIndex = 72;
+            this.label8.Text = "טבלת אימונים";
             // 
             // FormAddTrainings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.trainHour);
             this.Controls.Add(this.comboTool);
             this.Controls.Add(this.comboType);
@@ -315,5 +328,6 @@
         private System.Windows.Forms.ComboBox comboType;
         private System.Windows.Forms.ComboBox comboTool;
         private System.Windows.Forms.DateTimePicker trainHour;
+        private System.Windows.Forms.Label label8;
     }
 }

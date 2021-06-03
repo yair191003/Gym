@@ -45,6 +45,7 @@
             this.tblToolsTableAdapter = new Gym.DataSetToolsTableAdapters.tblToolsTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToolsBindingSource)).BeginInit();
@@ -88,7 +89,7 @@
             this.buttonBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(56, 19);
-            this.buttonBrowse.TabIndex = 78;
+            this.buttonBrowse.TabIndex = 3;
             this.buttonBrowse.Text = ". . .עיון";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click_1);
@@ -100,7 +101,7 @@
             this.pictureLocation.Name = "pictureLocation";
             this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
-            this.pictureLocation.TabIndex = 77;
+            this.pictureLocation.TabIndex = 2;
             // 
             // label10
             // 
@@ -119,7 +120,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(493, 197);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(80, 34);
-            this.buttonAdd.TabIndex = 75;
+            this.buttonAdd.TabIndex = 4;
             this.buttonAdd.Text = "הוסף";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -130,7 +131,7 @@
             this.toolName.Name = "toolName";
             this.toolName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.toolName.Size = new System.Drawing.Size(232, 20);
-            this.toolName.TabIndex = 79;
+            this.toolName.TabIndex = 1;
             // 
             // dataGridView1
             // 
@@ -183,11 +184,23 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1079, 268);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 16);
+            this.label3.TabIndex = 81;
+            this.label3.Text = "טבלת מכשירים";
+            // 
             // FormAddTools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.toolName);
             this.Controls.Add(this.buttonBrowse);
@@ -227,5 +240,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn toolPictureDataGridViewTextBoxColumn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.Label label3;
     }
 }

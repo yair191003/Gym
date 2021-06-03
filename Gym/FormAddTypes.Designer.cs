@@ -56,6 +56,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.comboTool = new System.Windows.Forms.ComboBox();
             this.comboAim = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblTypesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetTypes)).BeginInit();
@@ -187,7 +188,7 @@
             this.typeName.Name = "typeName";
             this.typeName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.typeName.Size = new System.Drawing.Size(232, 20);
-            this.typeName.TabIndex = 7;
+            this.typeName.TabIndex = 1;
             // 
             // typeSets
             // 
@@ -195,7 +196,7 @@
             this.typeSets.Name = "typeSets";
             this.typeSets.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.typeSets.Size = new System.Drawing.Size(232, 20);
-            this.typeSets.TabIndex = 9;
+            this.typeSets.TabIndex = 3;
             // 
             // typeRepeats
             // 
@@ -203,7 +204,7 @@
             this.typeRepeats.Name = "typeRepeats";
             this.typeRepeats.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.typeRepeats.Size = new System.Drawing.Size(232, 20);
-            this.typeRepeats.TabIndex = 10;
+            this.typeRepeats.TabIndex = 4;
             // 
             // buttonBrowse
             // 
@@ -212,7 +213,7 @@
             this.buttonBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(56, 19);
-            this.buttonBrowse.TabIndex = 52;
+            this.buttonBrowse.TabIndex = 7;
             this.buttonBrowse.Text = ". . .עיון";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -224,7 +225,7 @@
             this.pictureLocation.Name = "pictureLocation";
             this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
-            this.pictureLocation.TabIndex = 51;
+            this.pictureLocation.TabIndex = 6;
             // 
             // label10
             // 
@@ -243,7 +244,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(525, 325);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(80, 34);
-            this.buttonAdd.TabIndex = 49;
+            this.buttonAdd.TabIndex = 8;
             this.buttonAdd.Text = "הוסף";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -274,7 +275,7 @@
             this.comboTool.Name = "comboTool";
             this.comboTool.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboTool.Size = new System.Drawing.Size(232, 21);
-            this.comboTool.TabIndex = 54;
+            this.comboTool.TabIndex = 2;
             // 
             // comboAim
             // 
@@ -283,13 +284,25 @@
             this.comboAim.Name = "comboAim";
             this.comboAim.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboAim.Size = new System.Drawing.Size(232, 21);
-            this.comboAim.TabIndex = 55;
+            this.comboAim.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(1057, 343);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 16);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "טבלת סוגי אימונים";
             // 
             // FormAddTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.comboAim);
             this.Controls.Add(this.comboTool);
             this.Controls.Add(this.pictureBox1);
@@ -348,5 +361,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ComboBox comboTool;
         private System.Windows.Forms.ComboBox comboAim;
+        private System.Windows.Forms.Label label7;
     }
 }

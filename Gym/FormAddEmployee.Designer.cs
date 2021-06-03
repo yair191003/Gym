@@ -76,6 +76,7 @@
             this.tblCitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblCitiesTableAdapter = new Gym.DataSetCitiesTableAdapters.tblCitiesTableAdapter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEmployeesBindingSource)).BeginInit();
@@ -92,7 +93,7 @@
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonBrowse.Size = new System.Drawing.Size(56, 19);
-            this.buttonBrowse.TabIndex = 48;
+            this.buttonBrowse.TabIndex = 13;
             this.buttonBrowse.Text = ". . .עיון";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -104,7 +105,7 @@
             this.pictureLocation.Name = "pictureLocation";
             this.pictureLocation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pictureLocation.Size = new System.Drawing.Size(232, 20);
-            this.pictureLocation.TabIndex = 47;
+            this.pictureLocation.TabIndex = 12;
             // 
             // label10
             // 
@@ -135,7 +136,7 @@
             this.mobile.Name = "mobile";
             this.mobile.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.mobile.Size = new System.Drawing.Size(100, 20);
-            this.mobile.TabIndex = 44;
+            this.mobile.TabIndex = 8;
             // 
             // phone
             // 
@@ -144,7 +145,7 @@
             this.phone.Name = "phone";
             this.phone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.phone.Size = new System.Drawing.Size(100, 20);
-            this.phone.TabIndex = 43;
+            this.phone.TabIndex = 7;
             // 
             // isManeger
             // 
@@ -155,7 +156,7 @@
             this.isManeger.Name = "isManeger";
             this.isManeger.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.isManeger.Size = new System.Drawing.Size(58, 17);
-            this.isManeger.TabIndex = 42;
+            this.isManeger.TabIndex = 11;
             this.isManeger.Text = "?מנהל";
             this.isManeger.UseVisualStyleBackColor = true;
             // 
@@ -189,7 +190,7 @@
             this.comboCity.Name = "comboCity";
             this.comboCity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboCity.Size = new System.Drawing.Size(91, 21);
-            this.comboCity.TabIndex = 4;
+            this.comboCity.TabIndex = 6;
             this.comboCity.SelectedIndexChanged += new System.EventHandler(this.comboCity_SelectedIndexChanged);
             // 
             // buttonAdd
@@ -199,7 +200,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(690, 277);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(80, 34);
-            this.buttonAdd.TabIndex = 37;
+            this.buttonAdd.TabIndex = 14;
             this.buttonAdd.Text = "הוסף";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -222,7 +223,7 @@
             this.EmployAddress.Name = "EmployAddress";
             this.EmployAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployAddress.Size = new System.Drawing.Size(135, 20);
-            this.EmployAddress.TabIndex = 34;
+            this.EmployAddress.TabIndex = 5;
             // 
             // label6
             // 
@@ -253,7 +254,7 @@
             this.EmployLastName.Name = "EmployLastName";
             this.EmployLastName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployLastName.Size = new System.Drawing.Size(100, 20);
-            this.EmployLastName.TabIndex = 31;
+            this.EmployLastName.TabIndex = 3;
             // 
             // label4
             // 
@@ -273,7 +274,7 @@
             this.EmployFirstName.Name = "EmployFirstName";
             this.EmployFirstName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployFirstName.Size = new System.Drawing.Size(100, 20);
-            this.EmployFirstName.TabIndex = 29;
+            this.EmployFirstName.TabIndex = 2;
             // 
             // label3
             // 
@@ -293,7 +294,7 @@
             this.EmployId.Name = "EmployId";
             this.EmployId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployId.Size = new System.Drawing.Size(100, 20);
-            this.EmployId.TabIndex = 27;
+            this.EmployId.TabIndex = 1;
             // 
             // label2
             // 
@@ -438,7 +439,7 @@
             this.EmployBirthDate.Name = "EmployBirthDate";
             this.EmployBirthDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployBirthDate.Size = new System.Drawing.Size(200, 20);
-            this.EmployBirthDate.TabIndex = 50;
+            this.EmployBirthDate.TabIndex = 4;
             // 
             // label11
             // 
@@ -458,7 +459,7 @@
             this.EmployMail.Name = "EmployMail";
             this.EmployMail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployMail.Size = new System.Drawing.Size(100, 20);
-            this.EmployMail.TabIndex = 52;
+            this.EmployMail.TabIndex = 9;
             // 
             // EmployPassword
             // 
@@ -467,7 +468,7 @@
             this.EmployPassword.Name = "EmployPassword";
             this.EmployPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.EmployPassword.Size = new System.Drawing.Size(100, 20);
-            this.EmployPassword.TabIndex = 53;
+            this.EmployPassword.TabIndex = 10;
             // 
             // label12
             // 
@@ -498,11 +499,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(1091, 312);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(86, 16);
+            this.label13.TabIndex = 55;
+            this.label13.Text = "טבלת עובדים";
+            // 
             // FormAddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.EmployPassword);
             this.Controls.Add(this.EmployMail);
@@ -594,5 +607,6 @@
         private System.Windows.Forms.BindingSource tblCitiesBindingSource;
         private DataSetCitiesTableAdapters.tblCitiesTableAdapter tblCitiesTableAdapter;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label13;
     }
 }
